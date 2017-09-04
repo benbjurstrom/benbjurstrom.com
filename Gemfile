@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 3.3.0"
 gem "minimal-mistakes-jekyll"
-gem "quivjek", :path => "/Volumes/sites/quivjek"
+gem "quivjek"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
