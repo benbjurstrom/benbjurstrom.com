@@ -1,12 +1,12 @@
 ---
-title: H5 Frankenlight - 100w High CRI LED build
-date: '2017-09-02'
+title: H5 Frankenlight - DIY 100w High CRI LED build
+date: '2017-09-04'
 permalink: h5-frankenlight
+excerpt: Instructions for building a 100 watt 8,000 lumen high CRI video light
 tags:
 - diy
 - video
 ---
-
 <a href="https://www.dropbox.com/s/phx6serr4ecofa1/H5%20Light%20-%20Drilling%20Templates.pdf?dl=0" target="_blank">Drilling Templates</a>
 
 | **Electronics**        |                                                                    |
