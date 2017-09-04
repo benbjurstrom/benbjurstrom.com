@@ -5,3 +5,11 @@
 .breadcrumbs {
   margin: 0;
 }
+
+@media (min-width: 64em){
+  .author__bio {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right:35px;
+  }
+}

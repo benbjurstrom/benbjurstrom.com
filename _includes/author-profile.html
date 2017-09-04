@@ -7,13 +7,15 @@
 <div itemscope itemtype="http://schema.org/Person">
 
   {% if author.avatar %}
-    <a href="{{site.url}}" class="author__avatar">
-      {% if author.avatar contains "://" %}
-        <img src="{{ author.avatar }}" alt="{{ author.name }}" itemprop="image">
-      {% else %}
-        <img src="{{ author.avatar | absolute_url }}" class="author__avatar" alt="{{ author.name }}" itemprop="image">
-      {% endif %}
-    </a>
+    <div class="author__avatar">
+      <a href="{{site.url}}" >
+        {% if author.avatar contains "://" %}
+          <img src="{{ author.avatar }}" alt="{{ author.name }}" itemprop="image">
+        {% else %}
+          <img src="{{ author.avatar | absolute_url }}" class="author__avatar" alt="{{ author.name }}" itemprop="image">
+        {% endif %}
+      </a>
+    </div>
   {% endif %}
 
   <div class="author__content">
