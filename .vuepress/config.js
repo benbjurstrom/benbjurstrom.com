@@ -87,7 +87,7 @@ module.exports = {
     // paginationComponent: 'SimplePagination'
   },
   define: {
-    THEME_BLOG_PAGINATION_COMPONENT: 'Pagination'
+    THEME_BLOG_PAGINATION_COMPONENT: 'SimplePagination'
   },
   extendPageData: function (pageCtx) {
     const strippedContent = pageCtx._strippedContent
