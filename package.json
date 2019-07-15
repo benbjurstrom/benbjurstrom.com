@@ -1,5 +1,9 @@
 {
   "devDependencies": {
-    "vuepress": "^1.0.2"
+    "@vuepress/plugin-blog": "latest",
+    "@vuepress/plugin-medium-zoom": "^1.0.0-rc.1",
+    "@vuepress/plugin-nprogress": "^1.0.0-rc.1",
+    "@vuepress/plugin-search": "^1.0.2",
+    "vuepress": "^1.0.0-rc.1"
   }
 }
