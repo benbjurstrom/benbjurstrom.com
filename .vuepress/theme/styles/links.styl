@@ -1,0 +1,30 @@
+a
+    text-decoration none
+    color theme('colors.black')
+    border-bottom 1px solid theme('colors.primary')
+    &:hover
+        color theme('colors.primary')
+
+a.header-anchor
+    font-family theme('fontFamily.sans')
+    font-weight theme('fontWeight.bold')
+    color theme('colors.primary.400')
+    float left
+    font-size 0.85em
+    margin-top 0.14em
+    margin-left -0.85em
+    padding-right 0.26em
+    opacity 0
+    text-decoration none
+    border none
+    &:hover
+        color theme('colors.primary')
+    h2 > &
+        margin-top 0
+
+h1, h2, h3, h4, h5, h6
+    &:hover .header-anchor
+        opacity: 1
+
+.icon.outbound
+    display none !important

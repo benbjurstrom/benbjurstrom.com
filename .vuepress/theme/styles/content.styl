@@ -1,0 +1,40 @@
+.content
+    @extends $flex-container
+
+    // Typography.
+    font-family theme('fontFamily.content')
+    font-size theme('fontSize.xl')
+    @media md
+        font-size theme('fontSize.2xl')
+
+    // Remove title and magnify introduction.
+    > h1:first-of-type
+        display none
+    > p:first-of-type
+        font-size theme('fontSize.xl')
+        @media md
+            font-size theme('fontSize.2xl')
+
+    // Code breaks out of the container.
+    div[class*="language-"]
+        @extends $break-out-of-flex-container
+        border-radius 0
+        align-self stretch
+        pre, pre[class*="language-"]
+            @extends $container
+
+    // Image breaks out of the container
+    > p > img
+        display block
+        margin theme('margin.6') auto
+        max-width 100%
+        @media lg
+            max-width theme('width.bleeding-out-of-container-sm')
+        @media xl
+            max-width theme('width.bleeding-out-of-container')
+
+    // Helpers to constraint image size
+    @media sm
+        for i in 1..10
+            img[src$={'"#w' + (i * 10) + '"'}]
+                max-width i * 10% !important

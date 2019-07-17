@@ -1,11 +1,26 @@
 {
+  "name": "benbjurstrom.com",
+  "author": "Ben Bjurstrom",
+  "description": "Personal website and blog",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benbjurstrom/benbjurstrom.git"
+  },
+  "keywords": [],
+  "scripts": {
+    "watch": "npm run dev",
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
   "devDependencies": {
-    "@vuepress/plugin-blog": "latest",
-    "@vuepress/plugin-medium-zoom": "^1.0.0-rc.1",
-    "@vuepress/plugin-nprogress": "^1.0.0-rc.1",
-    "@vuepress/plugin-search": "^1.0.2",
-    "remove-markdown": "^0.3.0",
-    "vue-feather-icons": "^5.0.0",
+    "@vuepress/plugin-google-analytics": "^1.0.2",
+    "svg-inline-loader": "^0.8.0",
+    "tailwindcss": "^1.0.5",
+    "tailwindcss-plugins": "^0.2.0",
+    "vuepress-plugin-disqus": "^0.1.1",
+    "vuepress-plugin-seo": "^0.1.2",
     "vuepress": "^1.0.0-rc.1"
   }
 }

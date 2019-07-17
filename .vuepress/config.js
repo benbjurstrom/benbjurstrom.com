@@ -1,104 +1,42 @@
-const removeMd = require('remove-markdown')
-
 module.exports = {
-  title: 'VuePress Blog Example',
-  description: 'This is a blog example built by VuePress',
-  plugins: [
-    '@vuepress/plugin-nprogress',
-    [
-      '@vuepress/blog',
-      {
-        directories: [
-          {
-            id: 'post',
-            dirname: '_posts',
-            path: '/',
-            // layout: 'IndexPost', defaults to `Layout.vue`
-            itemLayout: 'Post',
-            itemPermalink: '/:year/:month/:day/:slug',
-            pagination: {
-              lengthPerPage: 5,
-            },
-          },
-        ],
-        frontmatters: [
-          {
-            id: "tag",
-            keys: ['tag', 'tags'],
-            path: '/tag/',
-            // layout: 'Tag',  defaults to `FrontmatterKey.vue`
-            frontmatter: { title: 'Tag' },
-            pagination: {
-              lengthPerPage: 5
-            }
-          },
+	title: 'Ben Bjurstorm',
+	themeConfig: {
+		domain: 'https://benbjurstrom.com',
+		repo: 'https://github.com/benbjurstrom/benbjurstrom',
+		nav: [ '/', '/cv/' ],
+		author: {
+			name: 'Ben Bjurstrom',
+			twitter: '@benbjurstrom',
+		},
+		minimumFeaturedArticles: 6,
+		featuredArticles: [
+			'/some-test-article/'
+		],
+	},
+	head: [
+		// TODO: ['script', { type: 'application/ld+json' }, JSON.stringify({})],
+		['link', { rel: 'apple-touch-icon', sizes: '57x57', href: '/apple-icon-57x57.png' }],
+		['link', { rel: 'apple-touch-icon', sizes: '60x60', href: '/apple-icon-60x60.png' }],
+		['link', { rel: 'apple-touch-icon', sizes: '72x72', href: '/apple-icon-72x72.png' }],
+		['link', { rel: 'apple-touch-icon', sizes: '76x76', href: '/apple-icon-76x76.png' }],
+		['link', { rel: 'apple-touch-icon', sizes: '114x114', href: '/apple-icon-114x114.png' }],
+		['link', { rel: 'apple-touch-icon', sizes: '120x120', href: '/apple-icon-120x120.png' }],
+		['link', { rel: 'apple-touch-icon', sizes: '144x144', href: '/apple-icon-144x144.png' }],
+		['link', { rel: 'apple-touch-icon', sizes: '152x152', href: '/apple-icon-152x152.png' }],
+		['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-icon-180x180.png' }],
+		['link', { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/android-icon-192x192.png' }],
+		['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }],
+		['link', { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon-96x96.png' }],
+		['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' }],
+		['link', { rel: 'manifest', href: '/manifest.json' }],
+		['meta', { name: 'msapplication-TileColor', content: '#ffffff' }],
+		['meta', { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' }],
+		['meta', { name: 'theme-color', content: '#ffffff' }]
+    ],
+    postcss: {
+        plugins: [
+            require('tailwindcss')('./tailwind.config.js'),
+            require('autoprefixer'),
         ]
-      }
-    ],
-    ['@vuepress/medium-zoom', true],
-    ['@vuepress/search', {
-      searchMaxSuggestions: 10
-    }],
-  ],
-  themeConfig: {
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/#nav
-     */
-    nav: [
-      {
-        text: 'Blog',
-        link: '/',
-      },
-      {
-        text: 'Tags',
-        link: '/tag/',
-      },
-      {
-        text: 'About',
-        link: '/about/',
-      },
-    ],
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/#footer
-     */
-    footer: {
-      contact: [
-        {
-          type: 'github',
-          link: 'https://github.com/ulivz',
-        },
-        {
-          type: 'twitter',
-          link: 'https://twitter.com/_ulivz',
-        },
-      ],
-      copyright: [
-        {
-          text: 'Privacy Policy',
-          link: 'https://policies.google.com/privacy?hl=en-US',
-        },
-        {
-          text: 'MIT Licensed | Copyright © 2018-present Vue.js',
-          link: '',
-        },
-      ],
-    },
-
-    // paginationComponent: 'SimplePagination'
-  },
-  define: {
-    THEME_BLOG_PAGINATION_COMPONENT: 'SimplePagination'
-  },
-  extendPageData: function (pageCtx) {
-    const strippedContent = pageCtx._strippedContent
-    if (!strippedContent) {
-      return
     }
-    pageCtx.summary = removeMd(
-        strippedContent
-        .trim()
-        .replace(/^#+\s+(.*)/, '')
-        .slice(0, 200)
-    ) + ' ...'
-  }
 }
