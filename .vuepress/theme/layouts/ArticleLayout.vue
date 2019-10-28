@@ -5,17 +5,18 @@
             <ArticleMetaData />
         </div>
         <Content class="content" />
-        <div class="bg-topaz mb-16 mt-8 py-8">
+        <!--<div class="bg-topaz mb-16 mt-8 py-8">
             <div class="container">
                 <SubscribeForm />
             </div>
-        </div>
-        <div class="container">
+        </div>-->
+        <div class="container mb-8">
             <ClientOnly>
-                <!-- comments -->
+                <div id="commento"></div>
+                <script src="https://cdn.commento.io/js/commento.js"></script>
             </ClientOnly>
         </div>
-        <div class="bg-gray-300 mt-16">
+        <div v-if="relatedArticles.length" class="bg-gray-300 mt-16">
             <div class="container py-4 sm:py-8">
                 <h2>Related articles</h2>
                 <div class="flex flex-wrap -mx-5">

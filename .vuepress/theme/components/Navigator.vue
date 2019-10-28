@@ -1,30 +1,28 @@
 <template>
     <div>
-        <Moveable>
-            <div class="navigator fixed z-navigator" slot-scope="{ dragged }">
-                <OnClickOutside :do="() => this.openned && this.toggle()">
-                    <div class="relative">
-                        <NavigatorButton @click="toggle(dragged)"></NavigatorButton>
-                        <div
-                            v-show="openned"
-                            class="hidden sm:block absolute top-0 right-0 shadow-md rounded-lg bg-gray-300 p-4 -mr-5 -mt-3 w-navigator"
-                        >
-                            <NavigatorInput
-                                ref="input"
-                                v-model="query"
-                                :dragged="dragged"
-                            ></NavigatorInput>
-                            <NavigatorResults
-                                :query="query"
-                                :focused="focused"
-                                :suggestions="suggestions"
-                                :dragged="dragged"
-                            ></NavigatorResults>
-                        </div>
+        <div class="navigator fixed z-navigator" slot-scope="{ dragged }">
+            <OnClickOutside :do="() => this.openned && this.toggle()">
+                <div class="relative">
+                    <NavigatorButton @click="toggle(dragged)"></NavigatorButton>
+                    <div
+                        v-show="openned"
+                        class="hidden sm:block absolute top-0 right-0 shadow-md rounded-lg bg-gray-300 p-4 -mr-5 -mt-3 w-navigator"
+                    >
+                        <NavigatorInput
+                            ref="input"
+                            v-model="query"
+                            :dragged="dragged"
+                        ></NavigatorInput>
+                        <NavigatorResults
+                            :query="query"
+                            :focused="focused"
+                            :suggestions="suggestions"
+                            :dragged="dragged"
+                        ></NavigatorResults>
                     </div>
-                </OnClickOutside>
-            </div>
-        </Moveable>
+                </div>
+            </OnClickOutside>
+        </div>
         <div
             v-show="openned"
             class="sm:hidden shadow-md fixed top-0 inset-x-0 bg-gray-300 p-4 pt-6 z-navigator"
@@ -46,14 +44,13 @@
 
 <script>
 import { fetchPagesInArray } from '@theme/utils'
-import Moveable from './Moveable'
 import OnClickOutside from './OnClickOutside'
 import NavigatorButton from './NavigatorButton'
 import NavigatorInput from './NavigatorInput'
 import NavigatorResults from './NavigatorResults'
 
 export default {
-    components: { Moveable, OnClickOutside, NavigatorButton, NavigatorInput, NavigatorResults },
+    components: { OnClickOutside, NavigatorButton, NavigatorInput, NavigatorResults },
     provide () {
         return {
             toggle: this.toggle,

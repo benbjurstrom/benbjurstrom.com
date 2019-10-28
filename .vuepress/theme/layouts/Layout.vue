@@ -1,7 +1,7 @@
 <template>
-    <div class="theme-container">
+    <div class="theme-container flex flex-col h-screen">
         <Header />
-        <component :is="layout" />
+        <component :is="layout" class="flex-grow"/>
         <Footer />
     </div>
 </template>

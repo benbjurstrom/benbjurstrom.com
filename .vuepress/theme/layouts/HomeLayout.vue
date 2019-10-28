@@ -1,23 +1,23 @@
 <template>
     <div>
-        <div class="container lg:max-w-lg xl:max-w-xl mb-16"> 
+        <div class="container lg:max-w-4xl xl:max-w-5xl mb-16">
             <div class="flex flex-wrap -mx-5">
-                <ArticleCard 
-                    v-for="article in $featuredArticles" 
+                <ArticleCard
+                    v-for="article in $featuredArticles"
                     :key="article.key"
                     :article="article"
                     class="mx-5 mb-6 sm:mb-10"
-                    highlight-every-third
+                    :highlight-every-third="true"
                 />
             </div>
         </div>
-        <div class="container">
-            <h2>More articles</h2>
-        </div>
-        <ArticleList 
-            class="mb-16"
-            :articles="$otherArticles"
-        />
+<!--        <div class="container">-->
+<!--            <h2>More articles</h2>-->
+<!--        </div>-->
+<!--        <ArticleList -->
+<!--            class="mb-16"-->
+<!--            :articles="$otherArticles"-->
+<!--        />-->
     </div>
 </template>
 

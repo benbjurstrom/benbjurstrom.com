@@ -2,9 +2,8 @@ const path = require('path')
 
 module.exports = {
 	plugins: {
-        '@vuepress/google-analytics': { ga: 'UA-XXXXXXXXX-4' },
+        'minimal-analytics': { ga: ' UA-98425034-1' },
         'seo': true,
-        'disqus': true,
     },
     enhanceAppFiles: [
         path.resolve(__dirname, 'articles.js'),

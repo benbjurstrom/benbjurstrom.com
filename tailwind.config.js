@@ -293,7 +293,7 @@ module.exports = {
     },
     gradients: theme => ({
       // Array definition (defaults to linear gradients).
-      'topaz':      ['30deg', theme('colors.orange.500'), theme('colors.pink.400')],
+      'topaz':      ['30deg', '#4488BB', '#4488BB' ],
       'topaz-dark': ['30deg', theme('colors.orange.700'), theme('colors.pink.600')],
       'emerald':    ['to right', theme('colors.green.400'), theme('colors.teal.500')],
       'fireopal':   ['to right', '#40E0D0', '#FF8C00', '#FF0080'],
@@ -454,8 +454,8 @@ module.exports = {
       '40': '40',
       '50': '50',
       'article-card': 20,
-      'navigator': 30,
-      'floating-header': 40,
+      'floating-header': 30,
+      'navigator': 40,
     },
   },
   variants: {
