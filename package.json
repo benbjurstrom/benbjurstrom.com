@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "tailwindcss-transforms": "^2.2.0",
-    "tailwindcss-transitions": "^2.1.0"
+    "tailwindcss-transitions": "^2.1.0",
+    "vuepress-plugin-clean-urls": "^1.1.1"
   }
 }

@@ -19,7 +19,7 @@
         },
         computed: {
             page () {
-                if (this.$page.path === '/') return 'Home'
+                if (this.$page.path === '') return 'Home'
                 if (this.$page.frontmatter.permalink === 'posts') return 'Posts'
                 if (this.$page.frontmatter.permalink === 'projects') return 'Projects'
                 return 'NotFound'

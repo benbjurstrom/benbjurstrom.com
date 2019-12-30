@@ -1,5 +1,5 @@
 <template>
-    <div class="bleed">
+    <div class="bleed my-4">
         <div class="relative" style="padding-top: 56.25%;">
             <iframe
                 :src="url" width="560" height="315"
