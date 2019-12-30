@@ -1,5 +1,4 @@
 ---
-permalink: h5-frankenlight
 image: https://storage.googleapis.com/benbjurstrom.com/img/h5-frankenlight/diy-high-cri-led.jpg
 description: Instructions for building a 100 watt 8,000 lumen high CRI video light
 tags: [ 'DIY', 'Gear' ]

@@ -1,6 +1,6 @@
 ---
-permalink: posts
-icon: work
+permalink: /posts.html
+page: Posts
 ---
 
 # Article Layout

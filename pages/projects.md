@@ -1,6 +1,6 @@
 ---
-permalink: projects
-icon: work
+permalink: /projects.html
+page: Projects
 ---
 
 # Article Layout

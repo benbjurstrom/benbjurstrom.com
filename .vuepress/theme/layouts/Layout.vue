@@ -20,8 +20,8 @@
         computed: {
             page () {
                 if (this.$page.path === '/') return 'Home'
-                if (this.$page.frontmatter.permalink === 'posts') return 'Posts'
-                if (this.$page.frontmatter.permalink === 'projects') return 'Projects'
+                if (this.$page.frontmatter.page === 'Posts') return 'Posts'
+                if (this.$page.frontmatter.page === 'Projects') return 'Projects'
                 return 'NotFound'
             }
         },

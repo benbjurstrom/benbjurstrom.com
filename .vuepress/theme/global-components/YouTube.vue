@@ -5,6 +5,7 @@
                 :src="url" width="560" height="315"
                 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
                 class="inline"
+                title="Youtube Embedded Player"
             ></iframe>
         </div>
     </div>

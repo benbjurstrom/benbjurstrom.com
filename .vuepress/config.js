@@ -1,5 +1,6 @@
 module.exports = {
 	title: 'Ben Bjurstorm',
+	permalink: '/posts/:slug.html',
 	themeConfig: {
 		domain: 'https://benbjurstrom.com',
 		repo: 'https://github.com/benbjurstrom/benbjurstrom',
@@ -12,12 +13,6 @@ module.exports = {
 	plugins: [
 		['@vuepress/google-analytics', {'ga': 'UA-98425034-1'}],
 		['seo', true]
-		['vuepress-plugin-clean-urls', {
-				normalSuffix: '.html',
-				indexSuffix: '.html',
-				notFoundPath: '/404.html'
-			}
-		],
 	],
 	postcss: {
 		plugins: [
