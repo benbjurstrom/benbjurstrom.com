@@ -7,7 +7,7 @@
             >
                 <div class="flex-shrink-0 w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
                     <img
-                        src="https://benbjurstrom.com/images/profile-photo.jpg"
+                        src="https://storage.googleapis.com/benbjurstrom.com/img/profile-photo.jpg"
                         class="rounded-full"
                         alt="Ben Bjurstrom"
                     >
