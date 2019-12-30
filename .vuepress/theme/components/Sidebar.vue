@@ -24,13 +24,13 @@
             <div class="md:mt-10 flex justify-center w-full md:block">
                 <router-link
                     class="block hover:bg-gray-700 text-gray-100 my-2 p-1 px-6"
-                    to="/posts"
+                    to="/posts.html"
                 >
                     Posts
                 </router-link>
                 <router-link
                     class="block hover:bg-gray-700 text-gray-100 my-2 p-1 px-6"
-                    to="/projects"
+                    to="/projects.html"
                 >
                     Projects
                 </router-link>
