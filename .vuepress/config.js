@@ -12,14 +12,12 @@ module.exports = {
 	plugins: [
 		['@vuepress/google-analytics', {'ga': 'UA-98425034-1'}],
 		['seo', true]
-		/*[
-			'vuepress-plugin-clean-urls',
-			{
+		['vuepress-plugin-clean-urls', {
 				normalSuffix: '',
 				indexSuffix: '',
-				notFoundPath: '/404.html',
-			},
-		],*/
+				notFoundPath: '/404.html'
+			}
+		],
 	],
 	postcss: {
 		plugins: [
