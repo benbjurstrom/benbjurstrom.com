@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import { randomElement } from '@theme/utils'
+import { randomElement } from '@theme/util'
 
 export default {
     props: {
