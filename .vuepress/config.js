@@ -11,15 +11,15 @@ module.exports = {
 	},
 	plugins: [
 		['minimal-analytics', {ga: 'UA-98425034-1'}],
-		['seo', true],
-		[
+		['seo', true]
+		/*[
 			'vuepress-plugin-clean-urls',
 			{
 				normalSuffix: '',
 				indexSuffix: '',
 				notFoundPath: '/404.html',
 			},
-		],
+		],*/
 	],
 	postcss: {
 		plugins: [

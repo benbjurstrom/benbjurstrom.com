@@ -12,11 +12,11 @@
     import { isArticle } from '@theme/util'
     import Sidebar from '@theme/components/Sidebar'
     import ArticleLayout from '@theme/layouts/ArticleLayout'
-    import DefaultLayout from '@theme/layouts/DefaultLayout'
+    import Layout from '@theme/layouts/Layout'
     export default {
         components: {
             Sidebar,
-            DefaultLayout,
+            Layout,
             ArticleLayout,
         },
         name: 'GlobalLayout',
@@ -27,7 +27,7 @@
                     return 'ArticleLayout'
                 }
 
-                return 'DefaultLayout'
+                return 'Layout'
             },
         },
         mounted () {
