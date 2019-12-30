@@ -13,8 +13,8 @@ module.exports = {
 		['@vuepress/google-analytics', {'ga': 'UA-98425034-1'}],
 		['seo', true]
 		['vuepress-plugin-clean-urls', {
-				normalSuffix: '',
-				indexSuffix: '',
+				normalSuffix: '.html',
+				indexSuffix: '.html',
 				notFoundPath: '/404.html'
 			}
 		],
