@@ -19,10 +19,10 @@
     "tailwindcss": "^1.1.4",
     "tailwindcss-plugins": "^0.3.0",
     "vuepress": "^1.2.0",
-    "vuepress-plugin-minimal-analytics": "^0.1.4",
     "vuepress-plugin-seo": "^0.1.2"
   },
   "dependencies": {
+    "@vuepress/plugin-google-analytics": "^1.2.0",
     "tailwindcss-transforms": "^2.2.0",
     "tailwindcss-transitions": "^2.1.0",
     "vuepress-plugin-clean-urls": "^1.1.1"

@@ -10,7 +10,7 @@ module.exports = {
 		},
 	},
 	plugins: [
-		['minimal-analytics', {ga: 'UA-98425034-1'}],
+		['@vuepress/google-analytics', {'ga': 'UA-98425034-1'}],
 		['seo', true]
 		/*[
 			'vuepress-plugin-clean-urls',
