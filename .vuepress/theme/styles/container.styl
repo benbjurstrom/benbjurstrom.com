@@ -3,11 +3,8 @@ $container
     max-width theme('screens.md')
     margin-right auto
     margin-left auto
-    padding-left theme('padding.8')
-    padding-right theme('padding.8')
-    @media lg
-        padding-left 0
-        padding-right 0
+    padding-left theme('padding.4')
+    padding-right theme('padding.4')
 
 $container-lg
     @extends $container
@@ -16,34 +13,13 @@ $container-lg
     @media xl
         max-width theme('width.bleeding-out-of-container')
 
-$break-out-of-container
-    width 100vw
-    position relative
-    left 50%
-    right 50%
-    margin-left -50vw
-    margin-right -50vw
-
-$flex-container
-    @extends $container
-    display flex
-    flex-direction column
-    align-items center
-    > *
-        min-width 100%
-
-$break-out-of-flex-container
-    @extends $break-out-of-container
-    align-self stretch
-
-$bleeding-out-of-container
+$bleed
     display block
-    margin theme('margin.6') auto
-    width 100%
-    @media lg
-        width theme('width.bleeding-out-of-container-sm')
+    margin theme('margin.6') theme('margin.-8')
+    @media md
+        margin theme('margin.6') auto
     @media xl
-        width theme('width.bleeding-out-of-container')
+        margin theme('margin.6') theme('margin.-12')
 
 .container
     @extends $container
@@ -51,8 +27,5 @@ $bleeding-out-of-container
 .container-lg
     @extends $container-lg
 
-.break-out-of-container
-    @extends $break-out-of-container
-
-.bleeding-out-of-container
-    @extends $bleeding-out-of-container
+.bleed
+    @extends $bleed

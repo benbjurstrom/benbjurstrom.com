@@ -1,11 +1,11 @@
 .content
-    @extends $flex-container
+    @extends $container
 
     // Typography.
-    font-family theme('fontFamily.content')
-    font-size theme('fontSize.xl')
+    font-family theme('fontFamily.sans')
+    font-size theme('fontSize.lg')
     @media md
-        font-size theme('fontSize.2xl')
+        font-size theme('fontSize.xl')
 
     // Remove title and magnify introduction.
     > h1:first-of-type
@@ -15,23 +15,13 @@
         @media md
             font-size theme('fontSize.2xl')
 
-    // Code breaks out of the container.
+    // Code bleeds out of the container.
     div[class*="language-"]
-        @extends $break-out-of-flex-container
+        @extends $bleed
         border-radius 0
         align-self stretch
         pre, pre[class*="language-"]
             @extends $container
-
-    // Image breaks out of the container
-    > p > img
-        display block
-        margin theme('margin.6') auto
-        max-width 100%
-        @media lg
-            max-width theme('width.bleeding-out-of-container-sm')
-        @media xl
-            max-width theme('width.bleeding-out-of-container')
 
     // Helpers to constraint image size
     @media sm

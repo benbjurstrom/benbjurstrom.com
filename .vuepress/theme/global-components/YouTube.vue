@@ -1,12 +1,10 @@
 <template>
-    <div class="mb-8">
-        <div class="bleeding-out-of-container relative" style="padding-top: 56.25%;">
-            <iframe
-                :src="url" width="560" height="315"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
-                class="inline"
-            ></iframe>
-        </div>
+    <div class="bleed relative" style="padding-top: 56.25%;">
+        <iframe
+            :src="url" width="560" height="315"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+            class="inline"
+        ></iframe>
     </div>
 </template>
 

@@ -3,15 +3,11 @@ module.exports = {
 	themeConfig: {
 		domain: 'https://benbjurstrom.com',
 		repo: 'https://github.com/benbjurstrom/benbjurstrom',
-		nav: [ '/', '/cv/' ],
+		nav: [ '/' ],
 		author: {
 			name: 'Ben Bjurstrom',
 			twitter: '@benbjurstrom',
 		},
-		minimumFeaturedArticles: 6,
-		featuredArticles: [
-			'/some-test-article/'
-		],
 	},
 	postcss: {
 		plugins: [

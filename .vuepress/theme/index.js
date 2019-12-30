@@ -6,7 +6,6 @@ module.exports = {
         'seo': true,
     },
     enhanceAppFiles: [
-        path.resolve(__dirname, 'articles.js'),
-        path.resolve(__dirname, 'search.js'),
+        path.resolve(__dirname, 'articles.js')
     ]
 }
