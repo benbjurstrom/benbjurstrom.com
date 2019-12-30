@@ -1,11 +1,14 @@
 <template>
-    <div class="bleed relative" style="padding-top: 56.25%;">
-        <iframe
-            :src="url" width="560" height="315"
-            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
-            class="inline"
-        ></iframe>
+    <div class="bleed">
+        <div class="relative" style="padding-top: 56.25%;">
+            <iframe
+                :src="url" width="560" height="315"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+                class="inline"
+            ></iframe>
+        </div>
     </div>
+
 </template>
 
 <script>
