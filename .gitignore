@@ -4,4 +4,3 @@ node_modules
 /public
 /.vuepress/dist
 /.vuepress/public/img
-articles
