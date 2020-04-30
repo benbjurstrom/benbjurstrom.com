@@ -6,7 +6,7 @@ featured: 1
 tags: [ 'optimization' ]
 ---
 
-# Automatically delete Gmail after 7 days 
+# Configuring Gmail to delete old email automatically
 
 <YouTube url="https://www.youtube.com/embed/OFuaoeq7gSw" />
 <br/>
