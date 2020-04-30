@@ -8,8 +8,8 @@
                target="_blank"
                class="block py-6 hover:bg-gray-200 border-b border-t border-transparent hover:border-gray hover:text-black"
             >
-                <div class="flex">
-                    <div class="w-1/4">
+                <div class="md:flex">
+                    <div class="w-1/4 md:mr-4">
                         <img class="object-contain h-48" :src="project.image" alt="">
                     </div>
                     <div class="w-3/4">

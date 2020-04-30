@@ -12,7 +12,7 @@
             </div>
         </div>
         <h1 class="mt-8">{{$page.title}}</h1>
-        <nav class="text-gray-600 mt-1" aria-label="Breadcrumb">
+        <nav class="text-gray-600 mt-2" aria-label="Breadcrumb">
             <ol class="list-none p-0 inline-flex">
                 <li class="flex items-center">
                     <router-link class="hover:text-gray-900" to="/">Home</router-link>
