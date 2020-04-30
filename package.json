@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@vuepress/plugin-google-analytics": "^1.2.0",
+    "jsonp": "^0.2.1",
     "tailwindcss-transforms": "^2.2.0",
     "tailwindcss-transitions": "^2.1.0"
   }

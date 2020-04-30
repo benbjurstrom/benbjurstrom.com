@@ -1,5 +1,6 @@
+@import 'content.styl'
 $codeBackground = theme('colors.gray.800')
-$codeColor = theme('colors.white')
+$codeColor = theme('colors.gray.300')
 $codeHighlightBackground = rgba(0, 0, 0, 66%)
 $codeVerticalPadding = theme('padding.10')
 
@@ -39,7 +40,7 @@ kbd
 
 div[class*="language-"]
     position relative
-    background $codeBackground
+    // background $codeBackground
     border-radius theme('borderRadius.lg')
     font-family theme('fontFamily.mono')
     margin-bottom theme('margin.8')
@@ -54,7 +55,8 @@ div[class*="language-"]
         .highlighted
             background $codeHighlightBackground
     pre, pre[class*="language-"]
-        background transparent
+        // @extends $wide
+        background $codeBackground
         position relative
         z-index 1
     &::before

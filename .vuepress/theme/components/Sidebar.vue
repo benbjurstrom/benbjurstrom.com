@@ -17,23 +17,23 @@
                         Ben Bjurstrom
                     </div>
                     <div class="sm:text-xl md:text-base text-gray-500">
-                        Personal Website
+                        A Personal Website
                     </div>
                 </div>
             </router-link>
             <div class="md:mt-10 flex justify-center w-full md:block">
-                <router-link
+                <!--<router-link
                     class="block hover:bg-gray-700 text-gray-100 my-2 p-1 px-6"
                     to="/posts.html"
                 >
                     Posts
-                </router-link>
-                <router-link
+                </router-link>-->
+                <!--<router-link
                     class="block hover:bg-gray-700 text-gray-100 my-2 p-1 px-6"
                     to="/projects.html"
                 >
                     Projects
-                </router-link>
+                </router-link>-->
                 <a
                     class="block hover:bg-gray-700 text-gray-100 my-2 p-1 px-6"
                     target="_blank"

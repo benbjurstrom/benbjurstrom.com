@@ -13,6 +13,7 @@ module.exports = {
 	plugins: [
 		['@vuepress/google-analytics', {'ga': 'UA-98425034-1'}],
 		['seo', true]
+		// require('./theme/plugins/clean-urls.js'),
 	],
 	postcss: {
 		plugins: [
