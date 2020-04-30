@@ -18,7 +18,7 @@ export default {
             div: null,
         }
     },
-    created() {
+    mounted() {
         this.getGistData();
     },
     methods: {
