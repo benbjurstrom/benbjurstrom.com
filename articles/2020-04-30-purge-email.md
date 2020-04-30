@@ -6,7 +6,7 @@ featured: 1
 tags: [ 'optimization' ]
 ---
 
-# Configuring Gmail to delete old email automatically
+# Delete old email automatically using Google Apps Script
 
 <YouTube url="https://www.youtube.com/embed/OFuaoeq7gSw" />
 <br/>
