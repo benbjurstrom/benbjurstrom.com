@@ -1,6 +1,6 @@
 ---
 date: 2020-04-30T08:00:00Z
-description: For the last six months I’ve had my Gmail account configured to automatically delete emails after 7 days that haven’t been archived, starred, or marked as important. And it’s been wonderful!
+description: For the last six months I’ve had my Gmail account configured to automatically delete unarchived mail after 7 days that hasn't been starred or marked as important. And it’s been wonderful!
 permalink: purge-email
 featured: 1
 tags: [ 'optimization' ]
@@ -11,7 +11,7 @@ tags: [ 'optimization' ]
 <YouTube url="https://www.youtube.com/embed/OFuaoeq7gSw" />
 <br/>
 
-For the last six months I’ve had my Gmail account configured to automatically delete emails after 7 days that haven’t been archived, starred, or marked as important. And it’s been wonderful!
+For the last six months I’ve had my Gmail account configured to automatically delete unarchived mail after 7 days that hasn't been starred or marked as important. And it’s been wonderful!
 
 As of this writing I have less than 150 emails in my inbox and I have spent literally zero time organizing them. 
 
@@ -66,7 +66,7 @@ If you look at the navigation sidebar you’re currently on the "My Projects" ta
 
 Click on _New Project_ in the upper left and a new project will open in a simple integrated development environment.
 
-In the left hand bar you can see a list of files included in this project. There there should be one file present by default called "Code.gs" which is the file we have open right now. This project will be relatively simple it's the only file that we’ll need.
+In the left hand bar you can see a list of files included in this project. There should be one file present by default called "Code.gs" which is the file we have open right now. Since this project will be relatively simple it's the only file that we’ll need.
 
 ![google-apps-script-new-project.png](https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/purge-email/google-apps-script-new-project.png)
 
@@ -76,7 +76,7 @@ Before moving on to the script itself let's take a moment to discuss Apps Script
 
 ![google-apps-script-timebased-trigger-docs.png](https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/purge-email/google-apps-script-timebased-trigger-docs.png)
 
-Thankfully Apps Script provides triggers which can call project functions. However, one gotcha we'll need to deal with is that projects are limited to only 20 triggers at a time and old triggers are not removed automatically. Therefore, we'll need to manually garbage collect any completed triggers.
+Thankfully Apps Script provides triggers which can call project functions. However, one gotcha we'll need to deal with is that Google imposes a 20 trigger limit and completed triggers are not removed automatically. Therefore, we'll need to manually garbage collect any completed triggers.
 
 ## Purge email script
 
@@ -179,7 +179,7 @@ function purge() {
 }
 ```
 
-Finally for each _GmailThread_ object that matched our search we’ll check to see if the most recent message in the thread is older than seven days. If so we’ll move the entire thread to the trash by calling the `moveToTrash` method on the object.
+Finally for each _GmailThread_ object that matched our search we’ll check to see if the most recent message in the thread is older than our `DELETE_AFTER_DAYS` constant. If so we’ll move the entire thread to the trash by calling the `moveToTrash` method on the object.
 
 ```js
 function purge() {
@@ -218,7 +218,7 @@ For my inbox with thousands of emails this went on for quite a while with each i
 ## Managing Email
 One note, because we programmed our script to move matching threads to the trash, the message won’t be permanently deleted for another 30 days. So if you need to free up space right away you will need to go to the trash and permanently delete the items that have been moved there.
 
-The rest of the time this extra 30 day buffer is nice to have. There’s been a couple of times where I forgot to Star, Archive, or Mark something I needed as important and I luckily caught it before 30 days were up and was able to pull it from the trash.
+The rest of the time this extra 30 day buffer is nice to have. There’s been a couple of times where I forgot to star, archive, or mark something I needed as important and I luckily caught it before 30 days were up and was able to pull it from the trash.
 
 What’s great about this system is that starred or important but unarchived email starts to stack up at the end of your inbox. Then it becomes super easy to sort through by simply archiving anything you want to keep or removing the important designation from any email you’d like to be deleted during the next daily purge.
 
