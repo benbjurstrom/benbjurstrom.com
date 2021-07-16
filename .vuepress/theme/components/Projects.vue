@@ -30,6 +30,12 @@
             return {
                 projects: [
                     {
+                      title: 'Mealpractice: Build your practice and share it with the world!',
+                      url: 'https://www.mealpractice.com',
+                      image: 'https://mealpractice-public.s3.us-west-2.amazonaws.com/assets/logo.svg',
+                      body: 'Mealpractice makes it easy to cook and share the recipes you love. Discover new recipes by following practitioners with similar tastes or nutritional goals.'
+                    },
+                    {
                         title: 'Astrify: Create custom stellar.toml files in seconds!',
                         url: 'https://astrify.com',
                         image: 'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/projects/astrify.png',
