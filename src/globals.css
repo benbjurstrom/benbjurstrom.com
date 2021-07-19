@@ -1,0 +1,31 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+.prose > p:first-of-type {
+  font-size: 1.25rem;
+}
+
+/*.prose > p {*/
+/*  margin-left: 1rem;*/
+/*  margin-right: 1rem;*/
+/*}*/
