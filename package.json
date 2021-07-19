@@ -3,6 +3,7 @@
   "scripts": {
     "dev": "next -p 3001",
     "build": "next build",
+    "postbuild": "next-sitemap --config next-sitemap.js",
     "start": "next start",
     "typecheck": "tsc"
   },
@@ -16,6 +17,7 @@
     "next": "latest",
     "next-mdx-remote": "^3.0.4",
     "next-seo": "^4.26.0",
+    "next-sitemap": "^1.6.140",
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
