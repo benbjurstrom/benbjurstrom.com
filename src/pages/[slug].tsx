@@ -22,6 +22,7 @@ type Props = {
 
 const Post = ({ post }: Props) => {
   const router = useRouter()
+
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
@@ -35,6 +36,7 @@ const Post = ({ post }: Props) => {
             <article className="mb-32 mt-12">
               <NextSeo
                 title={post.title}
+                canonical={'https://benbjurstrom.com' + router.asPath}
                 openGraph={{
                   url: '/' + post.slug,
                   title: post.title,

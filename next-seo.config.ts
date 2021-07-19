@@ -6,7 +6,7 @@ export default {
   defaultTitle: 'Ben Bjurstrom',
   titleTemplate: 'Ben Bjurstrom | %s',
   description:
-    'Personal website.',
+    'Personal website belonging to Ben Bjurstrom.',
   openGraph: {
     type: 'website',
     title: 'Ben Bjurstrom',
@@ -18,7 +18,7 @@ export default {
         url: 'https://s3.us-west-2.amazonaws.com/benbjurstrom.com/img/headshot.jpg',
         width: 1200,
         height: 630,
-        alt: 'Ben Bjurstrom Headshot.',
+        alt: 'Ben Bjurstrom Headshot',
       },
     ],
   },

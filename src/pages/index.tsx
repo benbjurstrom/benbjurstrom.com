@@ -18,7 +18,7 @@ const Index = ({ allPosts }: Props) => {
   return (
     <>
       <Layout>
-        <NextSeo title="Blog" />
+        <NextSeo title="Personal Website" canonical="https://benbjurstrom.com/" />
         <Container>
           <h2 className="mb-4 mt-12 font-serif text-3xl font-bold">Blog Posts</h2>
           {allPosts.map((post) => (
