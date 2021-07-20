@@ -9,6 +9,8 @@ ogImage:
   url: 'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-07-19-youtube-demonitized.png'
 ---
 
+<YouTube url="https://www.youtube.com/watch?v=qgQUhTiWICk" />
+
 ## TLDR
 
 My [WebConcepts](https://youtube.com/c/webconcepts) YouTube channel with over 100k subscribers was permanently demonetized last week after its AdSense account was closed for allegedly being related to another account.
