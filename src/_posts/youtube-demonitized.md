@@ -9,7 +9,7 @@ ogImage:
   url: 'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-07-19-youtube-demonitized.png'
 ---
 
-<YouTube url="https://www.youtube.com/watch?v=qgQUhTiWICk" />
+<YouTube url="https://www.youtube.com/embed/qgQUhTiWICk" />
 
 ## TLDR
 
