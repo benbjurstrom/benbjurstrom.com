@@ -1,4 +1,13 @@
 module.exports = {
+  async redirects() {
+    return [
+      {
+        source: '/youtube-demonitized',
+        destination: '/youtube-demonetized',
+        permanent: true,
+      },
+    ]
+  },
   images: {
     domains: [
       'images.unsplash.com',
