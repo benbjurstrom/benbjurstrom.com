@@ -11,7 +11,9 @@ ogImage:
 
 <YouTube url="https://www.youtube.com/embed/qgQUhTiWICk" />
 
+
 ## TLDR
+**`Update 2021-08-02:` [I sent Google a demand letter for breach of contract](https://benbjurstrom.com/demand-letter)**
 
 My [WebConcepts](https://youtube.com/c/webconcepts) YouTube channel with over 100k subscribers was permanently demonetized last week after its AdSense account was closed for allegedly being related to another account.
 
