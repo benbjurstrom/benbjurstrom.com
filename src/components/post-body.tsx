@@ -13,6 +13,8 @@ type Props = {
 const components = {
   YouTube: dynamic(() => import('@/components/youtube')),
   ImageModal: dynamic(() => import('@/components/image-modal')),
+  Tweet: dynamic(() => import('@/components/tweet')),
+  Pdf: dynamic(() => import('@/components/pdf')),
   code: dynamic(() => import('@/components/code-block')),
   img: ContentImage,
 }

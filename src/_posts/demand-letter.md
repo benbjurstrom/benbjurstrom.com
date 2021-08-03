@@ -1,12 +1,12 @@
 ---
 title: 'I sent Google a demand letter for breach of contract'
 date: '2021-08-02T08:00:00.000Z'
-excerpt: It’s been two weeks since Google demonetized my YouTube channel alleging that its Adsense account is related to some other banned account. This seems to be a mistake but I haven’t been able to contact anyone at Google who can fix it.
+excerpt: 'It’s been two weeks since my YouTube channel was wrongfully demonetized. Despite my best efforts I haven’t been able to reach anyone who can fix Google’s mistake.'
 author:
     name: Ben Bjurstrom
     picture: 'https://benbjurstrom.com.s3-us-west-2.amazonaws.com/img/headshot.jpg'
 ogImage:
-    url:'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-08-02-demand-letter.png'
+    url: 'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-07-19-youtube-demonitized.png'
 ---
 
 <YouTube url="https://www.youtube.com/embed/jmCeNh8eKhk" />
@@ -22,7 +22,7 @@ Given I've already found two others I’m guessing there are many YouTubers simi
 
 I also got a tweet from @TeamYouTube saying they were looking into the issue for me, but after publicly pretending they were doing something useful they slid into my DM’s to say there’s actually nothing they can do.
 
-<blockquote className="twitter-tweet"><p lang="en" dir="ltr">In the interest of transparency here’s the DM you sent me. <br/><br/>If you read the blog post or watched the video you’d know my account is not accused of violating your policies.<br/><br/>Instead Adsense alleges my account is related to an account that did. Which is simply not true. <a href="https://t.co/YQthzTien0">pic.twitter.com/YQthzTien0</a></p>&mdash; Ben Bjurstrom (@benbjurstrom) <a href="https://twitter.com/benbjurstrom/status/1418112582418722816?ref_src=twsrc%5Etfw">July 22, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+<Tweet tweetId="1418112582418722816"/>
 
 So unfortunately as of the date of this post I haven’t heard from anyone who has the authority to fix Google’s mistake. And to be honest I didn’t really expect to at this point. I recognize that I don’t have enough of a following to create a sufficient outcry.
 
@@ -37,10 +37,7 @@ All analysis applies purely to the wrongful termination of my company’s Adsens
 
 I sent this letter to Google HQ on Monday August 2, 2021.
 
-<object data="https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-08-02-demand-letter.pdf" type="application/pdf" width="100%" height="700px">
-    <embed src="https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-08-02-demand-letter.pdf">
-    </embed>
-</object>
+<Pdf url="https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-08-02-demand-letter.pdf"/>
 
 I certainly hope someone in their legal department will see it and reach out to try and avoid litigation. After doing some preliminary research I believe I have a strong case against Google for breach of contract.
 
@@ -82,10 +79,7 @@ In Free Range Content a number of Adsense publishers had their accounts closed a
 
 The publishers sued alleging, among other things, that Google breached the Adsense terms of service by withholding their Adsense revenue from the prior month.
 
-<object data="https://cases.justia.com/federal/district-courts/california/candce/5:2014cv02329/277540/116/0.pdf?ts=1463217446" type="application/pdf" width="100%" height="700px">
-    <embed src="https://cases.justia.com/federal/district-courts/california/candce/5:2014cv02329/277540/116/0.pdf?ts=1463217446">
-    </embed>
-</object>
+<Pdf url="https://cases.justia.com/federal/district-courts/california/candce/5:2014cv02329/277540/116/0.pdf?ts=1463217446"/>
 
 
 Incredibly the US District Court for the Northern District of California denied Google’s motion to dismiss on the breach of contract claim. Essentially the court held that Google did not prove as a matter of law that the Plaintiffs failed to perform under the contract.
