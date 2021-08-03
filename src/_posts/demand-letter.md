@@ -6,7 +6,7 @@ author:
     name: Ben Bjurstrom
     picture: 'https://benbjurstrom.com.s3-us-west-2.amazonaws.com/img/headshot.jpg'
 ogImage:
-    url: 'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-07-19-youtube-demonitized.png'
+    url: 'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-08-02-demand-letter.png'
 ---
 
 <YouTube url="https://www.youtube.com/embed/jmCeNh8eKhk" />
