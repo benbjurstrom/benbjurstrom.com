@@ -1,8 +1,9 @@
 import { PDFObject } from 'react-pdfobject'
 
-const Pdf = ({url}: { url: string }): JSX.Element => {
+const Pdf = ({url, id}: { url: string, id?: string }): JSX.Element => {
   return (
     <PDFObject
+      containerId={id}
       width="100%"
       height="600px"
       url={url}

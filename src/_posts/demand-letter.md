@@ -37,7 +37,7 @@ All analysis applies purely to the wrongful termination of my company’s Adsens
 
 I sent this letter to Google HQ on Monday August 2, 2021.
 
-<Pdf url="https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-08-02-demand-letter.pdf"/>
+<Pdf url="https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-08-02-demand-letter.pdf" id="demandletter"/>
 
 I certainly hope someone in their legal department will see it and reach out to try and avoid litigation. After doing some preliminary research I believe I have a strong case against Google for breach of contract.
 
@@ -79,7 +79,7 @@ In Free Range Content a number of Adsense publishers had their accounts closed a
 
 The publishers sued alleging, among other things, that Google breached the Adsense terms of service by withholding their Adsense revenue from the prior month.
 
-<Pdf url="https://cases.justia.com/federal/district-courts/california/candce/5:2014cv02329/277540/116/0.pdf?ts=1463217446"/>
+<Pdf url="https://cases.justia.com/federal/district-courts/california/candce/5:2014cv02329/277540/116/0.pdf?ts=1463217446" id="motion"/>
 
 
 Incredibly the US District Court for the Northern District of California denied Google’s motion to dismiss on the breach of contract claim. Essentially the court held that Google did not prove as a matter of law that the Plaintiffs failed to perform under the contract.
