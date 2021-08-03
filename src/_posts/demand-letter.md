@@ -3,8 +3,8 @@ title: 'I sent Google a demand letter for breach of contract'
 date: '2021-08-02T08:00:00.000Z'
 excerpt: It’s been two weeks since Google demonetized my YouTube channel alleging that its Adsense account is related to some other banned account. This seems to be a mistake but I haven’t been able to contact anyone at Google who can fix it.
 author:
-name: Ben Bjurstrom
-    picture:'https://benbjurstrom.com.s3-us-west-2.amazonaws.com/img/headshot.jpg'
+    name: Ben Bjurstrom
+    picture: 'https://benbjurstrom.com.s3-us-west-2.amazonaws.com/img/headshot.jpg'
 ogImage:
     url:'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-08-02-demand-letter.png'
 ---
