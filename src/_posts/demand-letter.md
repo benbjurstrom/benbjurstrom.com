@@ -39,10 +39,23 @@ I sent this letter to Google HQ on Monday August 2, 2021.
 
 <Pdf url="https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-08-02-demand-letter.pdf" id="demandletter"/>
 
-I certainly hope someone in their legal department will see it and reach out to try and avoid litigation. After doing some preliminary research I believe I have a strong case against Google for breach of contract.
+I certainly hope someone in their legal department will see it and reach out to try and avoid litigation. 
+
+I also submitted the letter in the body of a second appeal despite Google stating only one appeal will be reviewed every 90 days. Since the official [Appeals Form](https://support.google.com/adsense/contact/policy_disabled_appeal) has been repeatedly identified by Google's representatives as the only method of communicating with those authorized to fix this mistake.
+
+<ImageModal url="https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-08-03-second-appeal.png" title="Second appeal"
+subtitle="2021-08-03 11:46 AM PDT"/>
+
+Within a few minutes I received this response:
+> Hello, Thanks for contacting Google AdSense. According to our records, you already have an appeal pending with us. Please rest assured that we've received your request and one of our policy specialists will be reviewing your case soon. Once we have reviewed your appeal, you will receive a notification indicating our decision. In the meantime please do not file any further appeals. We appreciate your patience and understanding. Sincerely, The Google AdSense Team
+
+<ImageModal url="https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-08-03-second-appeal-response.png" title="Response to second appeal"
+subtitle="2021-08-03 11:53 AM PDT"/>
+
+Already have an appeal pending? Google sent me the denial of my first appeal two weeks ago. I'm guessing this is an automated response that gets sent to all submissions within 90 days regardless of whether a decision had been made on the initial appeal. Either way it will be interesting to see how Google explains this in court.
 
 ## Details of Google’s Breach
-To bring a claim for breach of contract in California you to prove 4 elements
+After doing some preliminary research I believe I have a strong case against Google for breach of contract. To sustain a claim for breach of contract in California you need to prove 4 elements:
 
 ### 1:  That there is a contract.
 
