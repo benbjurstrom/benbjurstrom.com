@@ -83,12 +83,10 @@ Here we have the obvious direct damages of the withheld $486.58. I don’t belie
 
 So all four elements are met and my claim for breach of contract appears to be on solid legal ground.
 
+##  Free Range Content v. Google.
 But surely it can’t be that easy right? Google’s Adsense contract governs the distribution of billions of dollars every month. It must be iron clad and any litigation against Google for breach of contract could never survive a motion to dismiss.
 
-I thought the same thing when I started researching this issue. That is until I read the Free Range Content v. Google case.
-
-##  Free Range Content v. Google.
-In Free Range Content a number of Adsense publishers had their accounts closed after Google detected invalid click activity on their websites.
+I thought the same thing when I started researching this issue. That is until I read the Free Range Content v. Google case. In Free Range Content a number of Adsense publishers had their accounts closed after Google detected invalid click activity on their websites.
 
 The publishers sued alleging, among other things, that Google breached the Adsense terms of service by withholding their Adsense revenue from the prior month.
 
