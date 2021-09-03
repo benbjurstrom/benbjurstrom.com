@@ -1,5 +1,5 @@
 ---
-title: 'It Worked! Google re-monetized my YouTube channel'
+title: 'It Worked! Google remonetized my YouTube channel'
 date: '2021-09-02T08:00:00.000Z'
 excerpt: 'Google re-enabled my Adsense account exactly 30 days after I sent a demand letter for breach of contract.'
 author:

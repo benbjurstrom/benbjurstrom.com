@@ -13,7 +13,7 @@ ogImage:
 
 
 ## TLDR
-**`Update 2021-09-02:` [It Worked! Google re-monetized my YouTube channel](/youtube-remonetized)**
+**`Update 2021-09-02:` [It Worked! Google remonetized my YouTube channel](/youtube-remonetized)**
 **`Update 2021-08-02:` [I sent Google a demand letter for breach of contract](/demand-letter)**
 
 My [WebConcepts](https://youtube.com/c/webconcepts) YouTube channel with over 100k subscribers was permanently demonetized last week after its AdSense account was closed for allegedly being related to another account.
