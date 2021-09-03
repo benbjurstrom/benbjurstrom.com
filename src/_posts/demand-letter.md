@@ -11,6 +11,8 @@ ogImage:
 
 <YouTube url="https://www.youtube.com/embed/jmCeNh8eKhk" />
 
+**`Update 2021-09-02:` [It Worked! Google re-monetized my YouTube channel](/youtube-remonetized)**
+
 It’s been two weeks since Google demonetized my YouTube channel alleging that its Adsense account is related to some other banned account. This seems to be a mistake but other then my appeal that was denied five hours later in the middle of the night I haven’t been able to contact anyone at Google who can fix it. 
 
 Right after it happened I wrote up a blogpost with all the details here: [benbjurstrom.com/youtube-demonetized](https://benbjurstrom.com/youtube-demonetized). My hope was that by amplifying my story on social media I could get the attention of someone at Google or Youtube who could help.
