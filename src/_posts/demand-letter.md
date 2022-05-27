@@ -77,7 +77,7 @@ The Adsense Terms of Service state as follows:
 
 In this case Google owed my company $486.58 by July 31, 2021 for the advertisements it ran on my videos during the month of June 2021. As of this writing on August 3, 2021 Google has failed to pay what they owe.
 
-Of course Google will argue that my account was not in good standing due to the related account allegation. But again, that alleged relation does not exist exist, Therefore as a factual matter my account was in good standing. Therefore by not paying timely Google has failed to perform their obligations under the contract. Therefore the third element is met.
+Of course Google will argue that my account was not in good standing due to the related account allegation. But again, that alleged relation does not exist, Therefore as a factual matter my account was in good standing. Therefore by not paying timely Google has failed to perform their obligations under the contract. Therefore the third element is met.
 
 ### 4: That the Defendant’s breach caused the Plaintiff damage.
 
