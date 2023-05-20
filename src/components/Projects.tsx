@@ -4,7 +4,7 @@ const projects = [
   {
     title: 'Mealpractice: Build your practice and share it with the world!',
     url: 'https://www.mealpractice.com',
-    image: 'https://mealpractice-public.s3.us-west-2.amazonaws.com/assets/logo.svg',
+    image: 'https://cdn.mealpractice.com/logo.svg',
     body: 'Mealpractice makes it easy to cook and share the recipes you love. Discover new recipes by following practitioners with similar tastes or nutritional goals.',
   },
   {
