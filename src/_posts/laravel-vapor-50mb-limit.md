@@ -6,7 +6,7 @@ author:
     name: Ben Bjurstrom
     picture: 'https://benbjurstrom.com.s3-us-west-2.amazonaws.com/img/headshot.jpg'
 ogImage:
-    url: 'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-08-02-demand-letter.png'
+    url: 'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/vapor-limit/laravel-vapor-50mb-limit.jpg'
 ---
 I've been working with Laravel vapor over the  last several years and one thing that comes up every now and then is hitting the 50MB AWS Lambda limit. As the Laravel Vapor documentation states:
 
@@ -14,15 +14,13 @@ I've been working with Laravel vapor over the  last several years and one thing 
 
 If you've hit the 50MB limit you might be considering using a Docker runtime as a potential solution. While this is a perfectly valid option, it comes with its own set of complexities and as you'll see may not be necessary for your application.
 
-## Reusable Vendors
+## What about Reusable Vendors?
 
-You might be thinking, "But what about Reusable Vendors? Doesn't that solve this problem?" Indeed, Laravel Vapor introduced the concept of [Reusable Vendors](https://blog.laravel.com/vapor-reusable-vendors) back in 2019 to help reduce the size of your deployment package by reusing common vendor dependencies. 
+Indeed, Laravel Vapor introduced the concept of [Reusable Vendors](https://blog.laravel.com/vapor-reusable-vendors) back in 2019 to help reduce the size of your deployment package by reusing common vendor dependencies. 
 
-However, there's a crucial limitation - Reusable Vendors does not work with Amazon Linux 2 runtimes. And because Amazon Linux 1 is no longer maintained as of December 31, 2020, the [Vapor documentation](https://docs.vapor.build/1.0/projects/environments.html#runtime) recommends using Amazon Linux 2 runtimes (such as php-7.4:al2, php-8.0:al2, php-8.1:al2, php-8.2:al2, php-8.2:al2-arm).
+However, that functionality never worked with the Amazon Linux 2 runtimes and now seems to have been [officially deprecated](https://github.com/laravel/vapor-cli/blob/master/src/BuildProcess/ValidateManifest.php#L33). Given the depreciation of Reusable Vendors here are four alternatives that you can use to get your application size down:
 
-With Reusable Vendors no longer being a viable solution, here are four other strategies you can use to get your application size down:
-
-## 1. Configure your vapor.yml file to ignore unnecessary folders
+## 1. Configure your `vapor.yml` file to ignore unnecessary folders
 The vapor.yml file allows you to specify folders to ignore during the deployment. This is handy for excluding folders that are not needed in your vapor environment. As an example, in my application I add the following folders to my ignore array:
 ```yaml
         ignore:
@@ -33,8 +31,8 @@ The vapor.yml file allows you to specify folders to ignore during the deployment
           - bootstrap/ssr
 ```
 
-## 2. Running composer install --no-dev
-By default, running `composer install` will include both the production and development dependencies. Appending the `--no-dev` flag will prevent Composer from installing the development dependencies thus reducing the size of your application bundle. In my app here's an example of the dependencies I keep in the `require-dev` section of my `composer.json` file since they are not needed in my deployed environments:
+## 2. Running `composer install --no-dev`
+By default, running `composer install` will include both the production and development dependencies. Appending the `--no-dev` flag will prevent Composer from installing the development dependencies thus reducing the size of your application bundle. In my app here's an example of the dependencies I keep in the `require-dev` section of my `composer.json` when using the `--no-dev` flag none of these dependencies are included in my vapor deployment.
 ```json
     "require-dev": {
     "fakerphp/faker": "^1.19",
@@ -61,12 +59,11 @@ By default, running `composer install` will include both the production and deve
 ```
 
 ## 3. Remove the `node_modules` folder after compiling JavaScript. 
-   If you're using a JavaScript build tool like Laravel Mix or Vite, it's likely that you'll have a node_modules directory in your project. This directory can be quite large, and it's not needed once your JavaScript has been compiled.
+   If you're using a JavaScript build tool like Laravel Mix or Vite, it's likely that you'll have a node_modules directory in your project. This directory can be quite large and is not needed once your JavaScript has been compiled.
 
 In my applications I remove the node_modules folder by adding the following to the build key of my `vapor.yml` file:
 ```yaml
         build:
-          - 'php artisan event:cache'
           - 'rm -rf node_modules'
 ```
 
@@ -88,7 +85,7 @@ To set this up you'll need to first identify which services you are using by add
 },
 ```
 
-Then to actually remove any unused services add the following to your `composer.json` scripts object. This will run the new removeUnusedServices command as part of the composer dump-autoload lifecycle.
+Then to actually remove any unused services add the following to your `composer.json` scripts object. This will run the new `removeUnusedServices` command as part of the composer dump-autoload lifecycle.
 ```json
 "pre-autoload-dump": "Aws\\Script\\Composer\\Composer::removeUnusedServices",
 ```
