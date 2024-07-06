@@ -10,14 +10,14 @@ const projects = [
   {
     title: 'Astrify: Create custom stellar.toml files in seconds!',
     url: 'https://astrify.com',
-    image: 'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/projects/astrify.png',
+    image: 'https://raw.githubusercontent.com/benbjurstrom/prezet/main/art/logo.png',
     body: "Astrify makes it easy to publish assets on the stellar network. Add your organization's information to a custom stellar.toml file. Accounts, assets, validators, and principals that are linked to the organization will show up in real time.",
   },
   {
-    title: 'Prezet: An opinionated Laravel preset with Inertia.js and Vuetify',
-    url: 'https://github.com/benbjurstrom/prezet-laravel-intertia-vuetify',
+    title: 'Prezet: Markdown Blogging for Laravel',
+    url: 'https://prezet.com',
     image: 'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/projects/prezet.png',
-    body: 'My goal with this project is to create an opinionated boilerplate that I can use to get working on a new idea right away without getting bogged down in all the cruft involved in setting up a new web app.',
+    body: 'Transform your markdown files into SEO-friendly blogs, articles, and documentation!',
   },
   {
     title: 'Webconcepts Youtube Channel',
