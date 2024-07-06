@@ -8,15 +8,9 @@ const projects = [
     body: 'Mealpractice makes it easy to cook and share the recipes you love. Discover new recipes by following practitioners with similar tastes or nutritional goals.',
   },
   {
-    title: 'Astrify: Create custom stellar.toml files in seconds!',
-    url: 'https://astrify.com',
-    image: 'https://raw.githubusercontent.com/benbjurstrom/prezet/main/art/logo.png',
-    body: "Astrify makes it easy to publish assets on the stellar network. Add your organization's information to a custom stellar.toml file. Accounts, assets, validators, and principals that are linked to the organization will show up in real time.",
-  },
-  {
     title: 'Prezet: Markdown Blogging for Laravel',
     url: 'https://prezet.com',
-    image: 'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/projects/prezet.png',
+    image: 'https://raw.githubusercontent.com/benbjurstrom/prezet/main/art/logo.png',
     body: 'Transform your markdown files into SEO-friendly blogs, articles, and documentation!',
   },
   {
@@ -46,7 +40,7 @@ const Projects: FC = (): JSX.Element => {
         >
           <div className="md:flex">
             <div className="flex-shrink-0 mb-4 sm:mb-0 sm:mr-4">
-              <img className="w-36 h-36 md:w-48 md:h-48" src={project.image} alt="" />
+              <img className="w-36 h-36 md:w-48 md:h-48 rounded-xl" src={project.image} alt="" />
             </div>
             <div>
               <div className="mt-4 text-gray-800 font-serif text-lg font-semibold md:mt-0">{project.title}</div>
