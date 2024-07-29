@@ -29,6 +29,11 @@ return [
     */
 
     'disks' => [
+        'prezet' => [
+            'driver' => 'local',
+            'root' => storage_path('prezet'),
+            'throw' => false,
+        ],
 
         'local' => [
             'driver' => 'local',
