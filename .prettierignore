@@ -1,0 +1,7 @@
+**/*.md
+**/node_modules
+/.github
+/public
+/resources/views/emails
+/database/seeders
+/storage/prezet

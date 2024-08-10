@@ -1,0 +1,22 @@
+{
+    "semi": false,
+    "jsxBracketSameLine": false,
+    "htmlWhitespaceSensitivity": "ignore",
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "printWidth": 80,
+    "tabWidth": 4,
+    "useTabs": false,
+    "bracketSpacing": true,
+    "arrowParens": "always",
+    "tailwindConfig": "./tailwind.config.js",
+    "plugins": ["prettier-plugin-blade", "prettier-plugin-tailwindcss"],
+    "overrides": [
+        {
+            "files": ["*.blade.php"],
+            "options": {
+                "parser": "blade"
+            }
+        }
+    ]
+}
