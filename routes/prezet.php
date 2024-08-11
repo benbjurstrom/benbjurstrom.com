@@ -1,7 +1,6 @@
 <?php
 
 use BenBjurstrom\Prezet\Http\Controllers\ImageController;
-use BenBjurstrom\Prezet\Http\Controllers\IndexController;
 use BenBjurstrom\Prezet\Http\Controllers\OgimageController;
 use BenBjurstrom\Prezet\Http\Controllers\ShowController;
 use Illuminate\Foundation\Http\Middleware\ValidateCsrfToken;
@@ -24,9 +23,6 @@ Route::middleware('cache.headers:public;max_age=7200;etag')
         Route::get('/prezet/ogimage/{slug}', OgimageController::class)
             ->name('prezet.ogimage')
             ->where('slug', '.*');
-
-        Route::get('/', IndexController::class)
-            ->name('prezet.index');
 
         Route::get('/{slug}', ShowController::class)
             ->name('prezet.show')
