@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
-        <loc>http://benbjurstrom.test/welcome-to-prezet</loc>
-        <lastmod>2024-07-29T22:05:47+00:00</lastmod>
+        <loc>https://benbjurstrom.com/prezet</loc>
+        <lastmod>2024-08-11T00:55:21+00:00</lastmod>
 
             </url>
     <url>
-        <loc>http://benbjurstrom.test/advanced-prezet-features</loc>
-        <lastmod>2024-07-29T22:05:47+00:00</lastmod>
+        <loc>https://benbjurstrom.com/laravel-vapor-50mb-limit</loc>
+        <lastmod>2023-05-23T20:06:52+00:00</lastmod>
 
             </url>
     <url>
-        <loc>http://benbjurstrom.test/customization/customizing-prezet</loc>
-        <lastmod>2024-07-29T22:05:47+00:00</lastmod>
+        <loc>https://benbjurstrom.com/youtube-remonetized</loc>
+        <lastmod>2022-05-27T07:04:24+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>https://benbjurstrom.com/demand-letter</loc>
+        <lastmod>2022-05-27T06:47:32+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>https://benbjurstrom.com/youtube-demonetized</loc>
+        <lastmod>2021-09-03T20:20:57+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>https://benbjurstrom.com/purge-email</loc>
+        <lastmod>2021-07-19T08:04:07+00:00</lastmod>
 
             </url>
 </urlset>
