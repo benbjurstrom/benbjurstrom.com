@@ -10,6 +10,9 @@
     "require": {
         "php": "^8.2",
         "benbjurstrom/prezet": "^0.8.3",
+        "bref/bref": "^2.3",
+        "bref/extra-php-extensions": "^1.4",
+        "bref/laravel-bridge": "^2.4",
         "codeat3/blade-simple-icons": "^5.4",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9"
