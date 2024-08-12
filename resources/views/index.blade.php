@@ -4,8 +4,6 @@
 
 <x-prezet::template>
     @seo([
-        'title' => 'Ben Bjurstrom',
-        'description' => 'Personal website belonging to Ben Bjurstrom.',
         'url' => route('prezet.index'),
     ])
     <div class="mt-9 sm:px-8">

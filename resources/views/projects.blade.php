@@ -32,6 +32,10 @@
 @endphp
 
 <x-prezet::template>
+    @seo([
+        'title' => 'My Projects',
+        'description' => 'I love using technology to create new things which naturally leads me to work on a diverse range of projects.',
+    ])
     <div class="mt-16 sm:mt-32 sm:px-8">
         <div class="mx-auto w-full max-w-7xl lg:px-8">
             <div class="relative px-4 sm:px-8 lg:px-12">

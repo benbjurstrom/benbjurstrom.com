@@ -63,6 +63,7 @@ constructs:
           '/build/*': public/build
           '/favicon/*': public/favicon
           '/favicon.ico': public/favicon.ico
+          '/favicon.svg': public/favicon.svg
           '/ogimage.png': public/ogimage.png
           '/robots.txt': public/robots.txt
           '/prezet_sitemap.xml': public/prezet_sitemap.xml

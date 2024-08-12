@@ -19,6 +19,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        seo()
+            ->site('Ben Bjurstrom')
+            ->title(
+                default: 'Ben Bjurstrom',
+                modify: fn (string $title) => $title . ' | Ben Bjurstrom'
+            )
+            ->withUrl()
+            ->description(default: 'Personal website belonging to Ben Bjurstrom')
+            ->image(default: fn () => asset('ogimage.png'))
+            ->twitterSite('@benbjurstrom');
     }
 }
