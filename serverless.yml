@@ -16,6 +16,24 @@ provider:
         SESSION_DRIVER: array
         CACHE_STORE: array
         BREF_BINARY_RESPONSES: '1'
+        AWS_BUCKET: !Ref PrezetBucket
+        PREZET_FILESYSTEM_DISK: s3
+    iam:
+      role:
+        statements:
+          # Allow Lambda to read and write files in the S3 buckets
+          - Effect: Allow
+            Action: s3:*
+            Resource:
+              - !Sub '${PrezetBucket.Arn}' # the storage bucket
+              - !Sub '${PrezetBucket.Arn}/*' # and everything inside
+
+resources:
+  Resources:
+    PrezetBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: benbjurstrom-prezet-storage
 
 package:
     # Files and directories to exclude from deployment
@@ -53,6 +71,7 @@ plugins:
   - ./vendor/bref/bref
   - ./vendor/bref/extra-php-extensions
   - serverless-lift
+  - serverless-s3-sync
 
 constructs:
     website:
@@ -68,3 +87,10 @@ constructs:
           '/robots.txt': public/robots.txt
           '/prezet_sitemap.xml': public/prezet_sitemap.xml
           # add here any file or directory that needs to be served from S3
+
+custom:
+  s3Sync:
+    # A simple configuration for copying static assets
+    - bucketName: benbjurstrom-prezet-storage # required
+      localDir: storage/prezet # required
+      deleteRemoved: true # optional, indicates whether sync deletes files no longer present in localDir. Defaults to 'true'
