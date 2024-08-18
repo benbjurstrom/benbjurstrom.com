@@ -15,6 +15,20 @@ a.external-link::after {
 |
 */
 
+.prose pre {
+    padding: 0 !important;
+    border-radius: 0.75rem;
+}
+
+.prose pre code {
+    padding: 1.25rem !important;
+    border-radius: 1rem;
+}
+
+.prose pre::-webkit-scrollbar {
+    display: none;
+}
+
 /*
  Margin and rounding are personal preferences,
  overflow-x-auto is recommended.

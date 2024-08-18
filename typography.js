@@ -197,15 +197,11 @@ module.exports = function typographyStyles({ theme }) {
 
                 // Code blocks
                 pre: {
-                    color: 'var(--tw-prose-pre-code)',
                     fontSize: theme('fontSize.sm')[0],
                     fontWeight: theme('fontWeight.medium'),
-                    backgroundColor: 'var(--tw-prose-pre-bg)',
-                    borderRadius: theme('borderRadius.3xl'),
-                    padding: theme('spacing.8'),
+                    borderRadius: theme('borderRadius.xl'),
+                    padding: 0,
                     overflowX: 'auto',
-                    border: '1px solid',
-                    borderColor: 'var(--tw-prose-pre-border)',
                 },
                 'pre code': {
                     display: 'inline',
