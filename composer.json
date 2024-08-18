@@ -7,6 +7,12 @@
         "framework"
     ],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/benbjurstrom/torchlight-commonmark-php"
+        }
+    ],
     "require": {
         "php": "^8.2",
         "benbjurstrom/prezet": "^0.8.5",
@@ -17,7 +23,8 @@
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
         "league/flysystem-aws-s3-v3": "^3.0",
-        "league/flysystem-read-only": "^3.0"
+        "league/flysystem-read-only": "^3.0",
+        "torchlight/torchlight-commonmark": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -71,6 +78,6 @@
             "php-http/discovery": true
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }

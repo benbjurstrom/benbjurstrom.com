@@ -36,6 +36,7 @@ return [
             League\CommonMark\Extension\FrontMatter\FrontMatterExtension::class,
             BenBjurstrom\Prezet\Extensions\MarkdownBladeExtension::class,
             BenBjurstrom\Prezet\Extensions\MarkdownImageExtension::class,
+            Torchlight\Commonmark\V2\TorchlightExtension::class,
         ],
 
         'config' => [

@@ -10,9 +10,12 @@ provider:
         - 'image/webp'
     # Environment variables
     environment:
+        APP_KEY: ${ssm:/benbjurstrom-com/APP_KEY}
+        TORCHLIGHT_TOKEN: ${ssm:/benbjurstrom-com/TORCHLIGHT_TOKEN}
         APP_ENV: production # Or use ${sls:stage} if you want the environment to match the stage
         APP_NAME: benbjurstrom
         APP_DEBUG: true
+        APP_URL: https://benbjurstrom.com
         SESSION_DRIVER: array
         CACHE_STORE: array
         BREF_BINARY_RESPONSES: '1'

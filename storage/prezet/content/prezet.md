@@ -40,11 +40,11 @@ I would argue that doing everything in the same Laravel codebase as your app has
 
 3. **Seamless Integration:** Allows easy incorporation of dynamic features within the Laravel framework. For example, need a mailing list signup in your blog? It's just another Laravel route:
 
-    ```php
-    Route::post('/subscribe', function (Request $request) {
-        // Subscription logic
-    });
-    ```
+```php
+Route::post('/subscribe', function (Request $request) {
+    // Subscription logic
+});
+```
 
 ## Prezet's Powerhouse Features
 
