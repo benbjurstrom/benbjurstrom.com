@@ -15,7 +15,7 @@
     ],
     "require": {
         "php": "^8.2",
-        "benbjurstrom/prezet": "^0.8.5",
+        "benbjurstrom/prezet": "^0.8.8",
         "bref/bref": "^2.3",
         "bref/extra-php-extensions": "^1.4",
         "bref/laravel-bridge": "^2.4",
