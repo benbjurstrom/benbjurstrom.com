@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a87cafa2cdfe08d61fc023521b877f9a",
+    "content-hash": "6c9bbb1ac2cd0cf8d57fdd09e3836ff4",
     "packages": [
         {
             "name": "archtechx/laravel-seo",
@@ -218,16 +218,16 @@
         },
         {
             "name": "benbjurstrom/prezet",
-            "version": "v0.8.5",
+            "version": "v0.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benbjurstrom/prezet.git",
-                "reference": "d60aa5ede86227443e58139b4451d74ff16810b4"
+                "reference": "59e35444021a8b6b30c070afb84e56c72366c65e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benbjurstrom/prezet/zipball/d60aa5ede86227443e58139b4451d74ff16810b4",
-                "reference": "d60aa5ede86227443e58139b4451d74ff16810b4",
+                "url": "https://api.github.com/repos/benbjurstrom/prezet/zipball/59e35444021a8b6b30c070afb84e56c72366c65e",
+                "reference": "59e35444021a8b6b30c070afb84e56c72366c65e",
                 "shasum": ""
             },
             "require": {
@@ -290,7 +290,7 @@
             ],
             "support": {
                 "issues": "https://github.com/benbjurstrom/prezet/issues",
-                "source": "https://github.com/benbjurstrom/prezet/tree/v0.8.5"
+                "source": "https://github.com/benbjurstrom/prezet/tree/v0.8.8"
             },
             "funding": [
                 {
@@ -298,7 +298,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-08-13T23:55:50+00:00"
+            "time": "2024-08-21T18:29:35+00:00"
         },
         {
             "name": "blade-ui-kit/blade-icons",
@@ -10829,7 +10829,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "torchlight/torchlight-commonmark": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
