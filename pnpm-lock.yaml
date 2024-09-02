@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  serverless-api-gateway-throttling:
+    specifier: ^2.0.3
+    version: 2.0.3
+
 devDependencies:
   '@tailwindcss/forms':
     specifier: ^0.5.7
@@ -4259,7 +4264,10 @@ packages:
 
   /lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
-    dev: true
+
+  /lodash.isempty@4.4.0:
+    resolution: {integrity: sha512-oKMuF3xEeqDltrGMfDxAPGIVMSSRv8tbRSODbrs4KGsRRLEhrW8N8Rd4DRgB2+621hY8A8XwwrTVhXWpxFvMzg==}
+    dev: false
 
   /lodash.isplainobject@4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
@@ -5254,6 +5262,13 @@ packages:
       tslib: 2.6.3
       upper-case-first: 2.0.2
     dev: true
+
+  /serverless-api-gateway-throttling@2.0.3:
+    resolution: {integrity: sha512-Ix7m7Kz0El8z0jETRZMW22frn/cY9R7yHElGj1zriqvAJtwWBZ6Gvinbl2QtxbQVopyOi1dJSzpkraeuGoYErQ==}
+    dependencies:
+      lodash.get: 4.4.2
+      lodash.isempty: 4.4.0
+    dev: false
 
   /serverless-lift@1.29.0(serverless@3.39.0):
     resolution: {integrity: sha512-FGxW0HfAaObNUc0TAlPUppsjimhtXtrVgqlqAENwyq1s2nWd/AFQE10mSI5cqGcb26ONDLMTY0W9lHJ1pxI4zQ==}
