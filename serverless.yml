@@ -53,6 +53,7 @@ functions:
     web:
         handler: public/index.php
         runtime: php-83-fpm
+        reservedConcurrency: 10
         timeout: 28 # in seconds (API Gateway has a timeout of 29 seconds)
         layers:
           - ${bref-extra:gd-php-83}
@@ -63,6 +64,7 @@ functions:
     artisan:
         handler: artisan
         runtime: php-83-console
+        reservedConcurrency: 5
         timeout: 720 # in seconds
         # Uncomment to also run the scheduler every minute
         #events:
