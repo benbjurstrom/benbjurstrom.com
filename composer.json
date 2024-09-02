@@ -11,6 +11,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/benbjurstrom/torchlight-commonmark-php"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/benbjurstrom/laravel-seo"
         }
     ],
     "require": {
@@ -24,7 +28,8 @@
         "laravel/tinker": "^2.9",
         "league/flysystem-aws-s3-v3": "^3.0",
         "league/flysystem-read-only": "^3.0",
-        "torchlight/torchlight-commonmark": "dev-main"
+        "torchlight/torchlight-commonmark": "dev-main",
+        "archtechx/laravel-seo": "dev-with-app-url as v0.10.1"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

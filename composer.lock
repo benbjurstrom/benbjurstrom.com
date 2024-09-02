@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c9bbb1ac2cd0cf8d57fdd09e3836ff4",
+    "content-hash": "b3e225ef525d679747d5f6798719e778",
     "packages": [
         {
             "name": "archtechx/laravel-seo",
-            "version": "v0.10.1",
+            "version": "dev-with-app-url",
             "source": {
                 "type": "git",
-                "url": "https://github.com/archtechx/laravel-seo.git",
-                "reference": "76d0f9efac160e499daae2d1a79e2d09ca0daaae"
+                "url": "https://github.com/benbjurstrom/laravel-seo.git",
+                "reference": "3d959c72ae6bbf79eefff99ebf96b417aea866d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/archtechx/laravel-seo/zipball/76d0f9efac160e499daae2d1a79e2d09ca0daaae",
-                "reference": "76d0f9efac160e499daae2d1a79e2d09ca0daaae",
+                "url": "https://api.github.com/repos/benbjurstrom/laravel-seo/zipball/3d959c72ae6bbf79eefff99ebf96b417aea866d7",
+                "reference": "3d959c72ae6bbf79eefff99ebf96b417aea866d7",
                 "shasum": ""
             },
             "require": {
@@ -48,7 +48,11 @@
                     "ArchTech\\SEO\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "ArchTech\\SEO\\Tests\\": "tests/"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -59,10 +63,9 @@
                 }
             ],
             "support": {
-                "issues": "https://github.com/archtechx/laravel-seo/issues",
-                "source": "https://github.com/archtechx/laravel-seo/tree/v0.10.1"
+                "source": "https://github.com/benbjurstrom/laravel-seo/tree/with-app-url"
             },
-            "time": "2024-05-03T22:09:30+00:00"
+            "time": "2024-09-02T20:34:20+00:00"
         },
         {
             "name": "aws/aws-crt-php",
@@ -10827,10 +10830,18 @@
             "time": "2024-03-03T12:36:25+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "archtechx/laravel-seo",
+            "version": "dev-with-app-url",
+            "alias": "v0.10.1",
+            "alias_normalized": "0.10.1.0"
+        }
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "torchlight/torchlight-commonmark": 20
+        "torchlight/torchlight-commonmark": 20,
+        "archtechx/laravel-seo": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

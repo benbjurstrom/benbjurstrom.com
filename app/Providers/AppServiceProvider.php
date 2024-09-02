@@ -25,15 +25,15 @@ class AppServiceProvider extends ServiceProvider
                 default: 'Ben Bjurstrom',
                 modify: fn (string $title) => $title . ' | Ben Bjurstrom'
             )
-            ->withUrl()
+            ->withAppUrl()
             ->description(default: 'Personal website belonging to Ben Bjurstrom')
             ->image(default: fn () => asset('ogimage.png'))
             ->twitterSite('@benbjurstrom');
 
 
-        $appUrl = trim(config('app.url'), '/');
-        if(request()->getSchemeAndHttpHost() !== $appUrl) {
-            seo()->robots('noindex');
-        }
+//        $appUrl = trim(config('app.url'), '/');
+//        if(request()->getSchemeAndHttpHost() !== $appUrl) {
+//            seo()->robots('noindex');
+//        }
     }
 }
