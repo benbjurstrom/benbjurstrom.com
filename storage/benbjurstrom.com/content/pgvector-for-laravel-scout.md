@@ -1,10 +1,9 @@
 ---
-title: 'Simple Vector Similarity Search For Laravel'
-date: '2024-11-17T08:00:00.000Z'
-excerpt: 'What if you wanted to search your data by a concept. Not a keyword. But rather something more abstract, like a category? How would you accomplish that?'
-author:
-    name: Ben Bjurstrom
-    picture: 'https://benbjurstrom.com.s3-us-west-2.amazonaws.com/img/headshot.jpg'
+title: Simple Vector Similarity Search For Laravel
+date: "2024-11-17T08:00:00.000Z"
+excerpt: What if you wanted to search your data by a concept. Not a keyword. But rather something more abstract, like a category? How would you accomplish that?
+author: [Ben Bjurstrom, "https://benbjurstrom.com.s3-us-west-2.amazonaws.com/img/headshot.jpg"]
+image: /prezet/img/ogimages/pgvector-for-laravel-scout.webp
 ---
 
 TLDR: I wrote a a Pgvector driver for Laravel Scout that makes it simple to search and maintain vector embeddings. Scout works well with pgvector since its model observers will automatically keep the vector embeddings up to date. You can find the package here: [https://github.com/benbjurstrom/pgvector-scout](https://github.com/benbjurstrom/pgvector-scout)

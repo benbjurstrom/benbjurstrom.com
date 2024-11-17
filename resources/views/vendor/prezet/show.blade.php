@@ -1,5 +1,12 @@
 <x-prezet::template>
     <x-prezet::alpine>
+        @seo([
+            'title' => $frontmatter->title,
+            'description' => $frontmatter->excerpt,
+            'url' => route('prezet.show', ['slug' => $frontmatter->slug]),
+            'image' => $frontmatter->image,
+        ])
+
         <div
             class="relative mx-auto flex w-full max-w-6xl flex-auto justify-center sm:px-2 lg:px-8 xl:px-12"
         >

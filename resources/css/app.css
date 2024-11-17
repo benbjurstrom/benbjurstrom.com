@@ -7,6 +7,11 @@ a.external-link::after {
     margin-left: 1px;
 }
 
+@font-face {
+    font-family: 'CalSans-SemiBold';
+    src: local('CalSans-SemiBold'), url('../fonts/CalSans-SemiBold.woff2');
+}
+
 /*
 |--------------------------------------------------------------------------
 | Torchlight Styles

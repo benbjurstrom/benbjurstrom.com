@@ -1,8 +1,12 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-CJins4X-.css",
+    "file": "assets/app-BOhUOjLj.css",
     "src": "resources/css/app.css",
     "isEntry": true
+  },
+  "resources/fonts/CalSans-SemiBold.woff2": {
+    "file": "assets/CalSans-SemiBold-uYvlD9JW.woff2",
+    "src": "resources/fonts/CalSans-SemiBold.woff2"
   },
   "resources/js/app.js": {
     "file": "assets/app-I5i9CKeh.js",

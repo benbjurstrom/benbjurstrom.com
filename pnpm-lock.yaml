@@ -9,13 +9,13 @@ devDependencies:
     specifier: ^0.5.7
     version: 0.5.7(tailwindcss@3.4.9)
   '@tailwindcss/typography':
-    specifier: ^0.5.13
+    specifier: ^0.5.14
     version: 0.5.14(tailwindcss@3.4.9)
   alpinejs:
-    specifier: ^3.4.2
+    specifier: ^3.14.1
     version: 3.14.1
   autoprefixer:
-    specifier: ^10.4.19
+    specifier: ^10.4.20
     version: 10.4.20(postcss@8.4.41)
   axios:
     specifier: ^1.6.4
@@ -24,7 +24,7 @@ devDependencies:
     specifier: ^1.0
     version: 1.0.5(vite@5.4.0)
   postcss:
-    specifier: ^8.4.38
+    specifier: ^8.4.41
     version: 8.4.41
   prettier:
     specifier: ^3.3.3
@@ -45,7 +45,7 @@ devDependencies:
     specifier: ^3.3.0
     version: 3.3.0(serverless@3.39.0)
   tailwindcss:
-    specifier: ^3.4.3
+    specifier: ^3.4.9
     version: 3.4.9
   vite:
     specifier: ^5.0

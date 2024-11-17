@@ -3,6 +3,7 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 import forms from '@tailwindcss/forms'
 import typography from '@tailwindcss/typography'
 const typographyStyles = require('./typography')
+const { fontFamily } = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -33,12 +34,20 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Inter', ...defaultTheme.fontFamily.sans],
+                cal: ['CalSans-SemiBold', ...fontFamily.sans],
             },
             maxWidth: {
                 '8xl': '88rem',
             },
+            borderRadius: {
+                '4xl': '2rem',
+            },
             colors: {
                 primary: colors.orange,
+                gray: colors.stone,
+                gradient1: '#e7e5e4',
+                gradient2: '#d4d4d8',
+                gradient3: '#a1a1aa',
             },
         },
     },
