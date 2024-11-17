@@ -4,11 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  serverless-api-gateway-throttling:
-    specifier: ^2.0.3
-    version: 2.0.3
-
 devDependencies:
   '@tailwindcss/forms':
     specifier: ^0.5.7
@@ -40,6 +35,9 @@ devDependencies:
   prettier-plugin-tailwindcss:
     specifier: ^0.6.6
     version: 0.6.6(prettier@3.3.3)
+  serverless-api-gateway-throttling:
+    specifier: ^2.0.3
+    version: 2.0.3
   serverless-lift:
     specifier: ^1.29.0
     version: 1.29.0(serverless@3.39.0)
@@ -4264,10 +4262,11 @@ packages:
 
   /lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    dev: true
 
   /lodash.isempty@4.4.0:
     resolution: {integrity: sha512-oKMuF3xEeqDltrGMfDxAPGIVMSSRv8tbRSODbrs4KGsRRLEhrW8N8Rd4DRgB2+621hY8A8XwwrTVhXWpxFvMzg==}
-    dev: false
+    dev: true
 
   /lodash.isplainobject@4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
@@ -5268,7 +5267,7 @@ packages:
     dependencies:
       lodash.get: 4.4.2
       lodash.isempty: 4.4.0
-    dev: false
+    dev: true
 
   /serverless-lift@1.29.0(serverless@3.39.0):
     resolution: {integrity: sha512-FGxW0HfAaObNUc0TAlPUppsjimhtXtrVgqlqAENwyq1s2nWd/AFQE10mSI5cqGcb26ONDLMTY0W9lHJ1pxI4zQ==}

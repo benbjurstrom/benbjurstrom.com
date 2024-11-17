@@ -1,7 +1,7 @@
 <x-prezet::template>
     <x-prezet::alpine>
         <div
-            class="relative mx-auto flex w-full max-w-7xl flex-auto justify-center sm:px-2 lg:px-8 xl:px-12"
+            class="relative mx-auto flex w-full max-w-6xl flex-auto justify-center sm:px-2 lg:px-8 xl:px-12"
         >
             <div
                 class="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:pl-8 lg:pr-0 xl:max-w-none xl:px-16"
@@ -20,7 +20,7 @@
                         </h1>
                     </header>
                     <div
-                        class="prose-headings:font-display prose-stone prose max-w-none prose-a:border-b prose-a:border-dashed prose-a:border-black/30 prose-a:font-semibold prose-a:no-underline hover:prose-a:border-solid prose-img:rounded"
+                        class="prose-h2:mt-12 prose-h3:mt-8 prose-headings:font-display prose-stone prose max-w-none prose-a:border-b prose-a:border-dashed prose-a:border-black/30 prose-a:font-semibold prose-a:no-underline hover:prose-a:border-solid prose-img:rounded"
                     >
                         {!! $body !!}
                     </div>

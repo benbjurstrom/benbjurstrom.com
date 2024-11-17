@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
                 default: 'Ben Bjurstrom',
                 modify: fn (string $title) => $title . ' | Ben Bjurstrom'
             )
-            ->withAppUrl()
+            ->withUrl('https://google.com')
             ->description(default: 'Personal website belonging to Ben Bjurstrom')
             ->image(default: fn () => asset('ogimage.png'))
             ->twitterSite('@benbjurstrom');

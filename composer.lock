@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3e225ef525d679747d5f6798719e778",
+    "content-hash": "622fd2a8662613d61cd520d156dc80ee",
     "packages": [
         {
             "name": "archtechx/laravel-seo",
@@ -221,16 +221,16 @@
         },
         {
             "name": "benbjurstrom/prezet",
-            "version": "v0.8.8",
+            "version": "v0.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benbjurstrom/prezet.git",
-                "reference": "59e35444021a8b6b30c070afb84e56c72366c65e"
+                "reference": "9dc96a3d26e8b514233393f64b0c7ab694fee903"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benbjurstrom/prezet/zipball/59e35444021a8b6b30c070afb84e56c72366c65e",
-                "reference": "59e35444021a8b6b30c070afb84e56c72366c65e",
+                "url": "https://api.github.com/repos/benbjurstrom/prezet/zipball/9dc96a3d26e8b514233393f64b0c7ab694fee903",
+                "reference": "9dc96a3d26e8b514233393f64b0c7ab694fee903",
                 "shasum": ""
             },
             "require": {
@@ -246,14 +246,15 @@
                 "wendelladriel/laravel-validated-dto": "^3.5"
             },
             "require-dev": {
-                "larastan/larastan": "^2.9",
+                "larastan/larastan": "2.9.8",
                 "laravel/pint": "^1.16",
                 "nunomaduro/collision": "^8.1.1||^7.10.0",
                 "orchestra/testbench": "^9.0.0||^8.22.0",
                 "pestphp/pest": "^2.34",
                 "pestphp/pest-plugin-arch": "^2.7",
                 "pestphp/pest-plugin-laravel": "^2.3",
-                "phpstan/extension-installer": "^1.3",
+                "phpstan/extension-installer": "^1.4.3",
+                "phpstan/phpstan": "1.12.2",
                 "phpstan/phpstan-deprecation-rules": "^1.1",
                 "phpstan/phpstan-phpunit": "^1.3",
                 "spatie/browsershot": "^4.0"
@@ -293,7 +294,7 @@
             ],
             "support": {
                 "issues": "https://github.com/benbjurstrom/prezet/issues",
-                "source": "https://github.com/benbjurstrom/prezet/tree/v0.8.8"
+                "source": "https://github.com/benbjurstrom/prezet/tree/v0.18.0"
             },
             "funding": [
                 {
@@ -301,7 +302,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-08-21T18:29:35+00:00"
+            "time": "2024-11-04T15:43:50+00:00"
         },
         {
             "name": "blade-ui-kit/blade-icons",
@@ -1899,16 +1900,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v11.18.1",
+            "version": "v11.32.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "b19ba518c56852567e99fbae9321bc436c2cc5a8"
+                "reference": "bc2aad63f83ee5089be7b21cf29d645ccf31e927"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/b19ba518c56852567e99fbae9321bc436c2cc5a8",
-                "reference": "b19ba518c56852567e99fbae9321bc436c2cc5a8",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/bc2aad63f83ee5089be7b21cf29d645ccf31e927",
+                "reference": "bc2aad63f83ee5089be7b21cf29d645ccf31e927",
                 "shasum": ""
             },
             "require": {
@@ -1927,7 +1928,7 @@
                 "fruitcake/php-cors": "^1.3",
                 "guzzlehttp/guzzle": "^7.8",
                 "guzzlehttp/uri-template": "^1.0",
-                "laravel/prompts": "^0.1.18",
+                "laravel/prompts": "^0.1.18|^0.2.0|^0.3.0",
                 "laravel/serializable-closure": "^1.3",
                 "league/commonmark": "^2.2.1",
                 "league/flysystem": "^3.8.0",
@@ -1970,6 +1971,7 @@
                 "illuminate/bus": "self.version",
                 "illuminate/cache": "self.version",
                 "illuminate/collections": "self.version",
+                "illuminate/concurrency": "self.version",
                 "illuminate/conditionable": "self.version",
                 "illuminate/config": "self.version",
                 "illuminate/console": "self.version",
@@ -2012,7 +2014,7 @@
                 "league/flysystem-sftp-v3": "^3.0",
                 "mockery/mockery": "^1.6",
                 "nyholm/psr7": "^1.2",
-                "orchestra/testbench-core": "^9.1.5",
+                "orchestra/testbench-core": "^9.5",
                 "pda/pheanstalk": "^5.0",
                 "phpstan/phpstan": "^1.11.5",
                 "phpunit/phpunit": "^10.5|^11.0",
@@ -2070,6 +2072,8 @@
                     "src/Illuminate/Events/functions.php",
                     "src/Illuminate/Filesystem/functions.php",
                     "src/Illuminate/Foundation/helpers.php",
+                    "src/Illuminate/Log/functions.php",
+                    "src/Illuminate/Support/functions.php",
                     "src/Illuminate/Support/helpers.php"
                 ],
                 "psr-4": {
@@ -2101,7 +2105,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-07-26T10:39:29+00:00"
+            "time": "2024-11-15T17:04:33+00:00"
         },
         {
             "name": "laravel/octane",

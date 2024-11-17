@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
-        <loc>https://benbjurstrom.com/prezet</loc>
-        <lastmod>2024-08-11T00:55:21+00:00</lastmod>
+        <loc>http://benbjurstrom.test/pgvector-for-laravel-scout</loc>
+        <lastmod>2024-11-17T20:31:36+00:00</lastmod>
 
             </url>
     <url>
-        <loc>https://benbjurstrom.com/laravel-vapor-50mb-limit</loc>
-        <lastmod>2023-05-23T20:06:52+00:00</lastmod>
+        <loc>http://benbjurstrom.test/prezet</loc>
+        <lastmod>2024-08-15T20:23:10+00:00</lastmod>
 
             </url>
     <url>
-        <loc>https://benbjurstrom.com/youtube-remonetized</loc>
-        <lastmod>2022-05-27T07:04:24+00:00</lastmod>
+        <loc>http://benbjurstrom.test/laravel-vapor-50mb-limit</loc>
+        <lastmod>2024-08-13T20:23:55+00:00</lastmod>
 
             </url>
     <url>
-        <loc>https://benbjurstrom.com/demand-letter</loc>
-        <lastmod>2022-05-27T06:47:32+00:00</lastmod>
+        <loc>http://benbjurstrom.test/youtube-remonetized</loc>
+        <lastmod>2024-08-13T20:23:55+00:00</lastmod>
 
             </url>
     <url>
-        <loc>https://benbjurstrom.com/youtube-demonetized</loc>
-        <lastmod>2021-09-03T20:20:57+00:00</lastmod>
+        <loc>http://benbjurstrom.test/demand-letter</loc>
+        <lastmod>2024-08-13T20:23:55+00:00</lastmod>
 
             </url>
     <url>
-        <loc>https://benbjurstrom.com/purge-email</loc>
-        <lastmod>2021-07-19T08:04:07+00:00</lastmod>
+        <loc>http://benbjurstrom.test/youtube-demonetized</loc>
+        <lastmod>2024-09-10T17:59:12+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>http://benbjurstrom.test/purge-email</loc>
+        <lastmod>2024-08-13T20:23:55+00:00</lastmod>
 
             </url>
 </urlset>
