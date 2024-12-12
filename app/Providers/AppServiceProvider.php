@@ -23,7 +23,6 @@ class AppServiceProvider extends ServiceProvider
             ->site('Ben Bjurstrom')
             ->title(
                 default: 'Ben Bjurstrom',
-                modify: fn (string $title) => $title . ' | Ben Bjurstrom'
             )
             ->withUrl('https://google.com')
             ->description(default: 'Personal website belonging to Ben Bjurstrom')
