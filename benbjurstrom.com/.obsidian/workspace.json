@@ -174,8 +174,7 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "janitor:Janitor: scan vault": false
+      "command-palette:Open command palette": false
     }
   },
   "active": "e54ef43b3870f5d1",
