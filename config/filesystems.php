@@ -31,7 +31,7 @@ return [
     'disks' => [
         'prezet' => [
             'driver' => 'local',
-            'root' => storage_path('benbjurstrom.com'),
+            'root' => base_path('benbjurstrom.com'),
             'throw' => false,
         ],
 

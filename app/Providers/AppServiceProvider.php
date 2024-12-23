@@ -24,7 +24,7 @@ class AppServiceProvider extends ServiceProvider
             ->title(
                 default: 'Ben Bjurstrom',
             )
-            ->withUrl('https://google.com')
+            ->withUrl(config('prezet.sitemap.origin'))
             ->description(default: 'Personal website belonging to Ben Bjurstrom')
             ->image(default: fn () => asset('ogimage.png'))
             ->twitterSite('@benbjurstrom');

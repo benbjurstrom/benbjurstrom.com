@@ -101,5 +101,5 @@ custom:
   s3Sync:
     # A simple configuration for copying static assets
     - bucketName: benbjurstrom-prezet-storage # required
-      localDir: storage/benbjurstrom.com # required
+      localDir: benbjurstrom.com # required
       deleteRemoved: true # optional, indicates whether sync deletes files no longer present in localDir. Defaults to 'true'
