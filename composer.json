@@ -18,16 +18,10 @@
         }
     ],
     "require": {
-        "php": "^8.2",
-        "benbjurstrom/prezet": "^0.20",
-        "bref/bref": "^2.3",
-        "bref/extra-php-extensions": "^1.4",
-        "bref/laravel-bridge": "^2.4",
+        "php": "^8.3",
+        "benbjurstrom/prezet": "^v0.20",
         "codeat3/blade-simple-icons": "^5.4",
-        "laravel/framework": "^11.31",
-        "laravel/tinker": "^2.9",
-        "league/flysystem-aws-s3-v3": "^3.0",
-        "league/flysystem-read-only": "^3.0",
+        "laravel/framework": "^11.33",
         "torchlight/torchlight-commonmark": "dev-main",
         "archtechx/laravel-seo": "dev-with-app-url as v0.10.1"
     },
@@ -35,6 +29,7 @@
         "fakerphp/faker": "^1.23",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.26",
+        "laravel/tinker": "^2.10",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.0",
         "pestphp/pest": "^2.34",
