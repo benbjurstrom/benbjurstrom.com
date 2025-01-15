@@ -251,9 +251,8 @@ lite-youtube.lyt-activated > .lty-playbtn {
 | https://github.com/benbjurstrom/alpinejs-zoomable
 |
 */
-
 img[x-zoomable]:hover {
-    cursor: zoom-in;
+ cursor: zoom-in;
 }
 
 .zoomable-fullscreen-container {
@@ -309,8 +308,12 @@ img[x-zoomable]:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
     transition: background-color 0.2s;
+}
+
+.zoomable-control-button > svg {
+    width: 20px;
+    height: 20px;
 }
 
 .zoomable-control-button:hover,
@@ -325,9 +328,11 @@ img[x-zoomable]:hover {
         right: 10px;
     }
 
-    .control-button {
+    .zoomable-control-button {
         width: 44px;
         height: 44px;
+        -webkit-tap-highlight-color: transparent; /* Prevents gray flash on iOS */
+        touch-action: manipulation; /* Optimize for touch */
     }
 }
 

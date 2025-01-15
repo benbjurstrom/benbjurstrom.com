@@ -3,8 +3,8 @@
         @seo([
             'title' => $frontmatter->title,
             'description' => $frontmatter->excerpt,
-            'url' => route('prezet.show', ['slug' => $frontmatter->slug]),
-            'image' => $frontmatter->image,
+            'url' => 'https://benbjurstrom.com' . route('prezet.show', ['slug' => $frontmatter->slug], false),
+            'image' => 'https://benbjurstrom.com' . $frontmatter->image,
         ])
 
         <div

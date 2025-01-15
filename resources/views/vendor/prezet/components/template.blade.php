@@ -45,7 +45,7 @@
         <!-- Scripts -->
         <script
             defer
-            src="https://cdn.jsdelivr.net/npm/@benbjurstrom/alpinejs-zoomable/dist/cdn.min.js"
+            src="https://unpkg.com/@benbjurstrom/alpinejs-zoomable@0.4.0/dist/cdn.min.js"
         ></script>
         <script
             defer
