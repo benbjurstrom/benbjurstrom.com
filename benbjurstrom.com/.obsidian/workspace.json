@@ -192,8 +192,14 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "837ac778f80eca0f",
+  "active": "80b12b263ccb25be",
   "lastOpenFiles": [
+    "images/home6.webp",
+    "images/home5.webp",
+    "images/home1.webp",
+    "images/home2.webp",
+    "images/home3.webp",
+    "images/home4.webp",
     "content/Untitled",
     "content/youtube-demonetized.md",
     "content/passwordless-authentication.md",
@@ -206,11 +212,6 @@
     "images/pgvector-for-laravel-scout-20241117122737083.webp",
     "images/youtube-demonetized-20240822132214761.webp",
     "images/youtube-demonetized-20240822132133641.webp",
-    "images/pgvector-for-laravel-scout-20241117121438216.webp",
-    "images/pgvector-for-laravel-scout-20241117075705970.webp",
-    "images/pgvector-for-laravel-scout-20241117075544162.webp",
-    "images/images-20240509210223449.webp",
-    "images/pgvector-for-laravel-scout-20241117122251906.webp",
     "content/laravel-vapor-50mb-limit.md",
     "content/demand-letter.md"
   ]
