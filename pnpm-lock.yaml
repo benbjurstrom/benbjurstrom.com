@@ -30,7 +30,7 @@ importers:
         specifier: ^3.4.9
         version: 3.4.9
       vite:
-        specifier: 5.4.6
+        specifier: ^5.4.6
         version: 5.4.6(@types/node@22.2.0)
     devDependencies:
       prettier:
