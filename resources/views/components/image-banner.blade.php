@@ -4,7 +4,7 @@
     >
         <x-responsive-image
             path="home5.webp"
-            sizes="(min-width: 640px) 18rem, 11rem"
+            sizes="(min-width: 640px) 18rem, 8rem"
             alt="Ben Bjurstrom"
             class="absolute inset-0 h-full w-full object-cover"
             style="color: transparent"
@@ -17,7 +17,7 @@
     >
         <x-responsive-image
             path="home6.webp"
-            sizes="(min-width: 640px) 18rem, 11rem"
+            sizes="(min-width: 640px) 18rem, 8rem"
             alt="Ben Bjurstrom"
             class="absolute inset-0 h-full w-full object-cover"
             style="color: transparent"
@@ -30,7 +30,7 @@
     >
         <x-responsive-image
             path="home1.webp"
-            sizes="(min-width: 640px) 18rem, 11rem"
+            sizes="(min-width: 640px) 18rem, 8rem"
             alt="Ben Bjurstrom"
             class="absolute inset-0 h-full w-full object-cover"
             style="color: transparent"
@@ -43,7 +43,7 @@
     >
         <x-responsive-image
             path="home4.webp"
-            sizes="(min-width: 640px) 18rem, 11rem"
+            sizes="(min-width: 640px) 18rem, 8rem"
             alt="Ben Bjurstrom"
             class="absolute inset-0 h-full w-full object-cover"
             style="color: transparent"
@@ -56,7 +56,7 @@
     >
         <x-responsive-image
             path="home3.webp"
-            sizes="(min-width: 640px) 18rem, 11rem"
+            sizes="(min-width: 640px) 18rem, 8rem"
             alt="Ben Bjurstrom"
             class="absolute inset-0 h-full w-full object-cover"
             style="color: transparent"

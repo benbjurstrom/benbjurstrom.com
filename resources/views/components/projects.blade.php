@@ -4,21 +4,21 @@
             'title' => 'MealPractice',
             'description' => 'AI Powered Meal Planning',
             'technologies' => 'Laravel, Livewire, Alpine.js, Tailwind CSS',
-            'logo' => 'https://mealpractice.com/favicon.svg',
+            'logo' => '/img/mealpractice.svg',
             'href' => 'https://mealpractice.com',
         ],
         [
             'title' => 'Prezet',
             'description' => 'Markdown Blogging for Laravel',
             'technologies' => 'Laravel, Alpine.js, Tailwind CSS',
-            'logo' => 'https://prezet.com/favicon.svg',
+            'logo' => '/img/prezet.svg',
             'href' => 'https://prezet.com',
         ],
         [
             'title' => 'WebConcepts Youtube Channel',
             'description' => 'Videos covering various concepts related to web development',
             'technologies' => '109k Subscribers',
-            'logo' => 'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/projects/web-concepts.png',
+            'logo' => '/img/webconcepts.webp',
             'href' => 'https://www.youtube.com/c/webconcepts',
         ],
         [
@@ -58,7 +58,7 @@
             <li>
                 <a href="{{ $project['href'] }}" class="block flex gap-4">
                     <div
-                        class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5"
+                        class="relative mt-1 flex h-10 w-10 flex-none  overflow-hidden items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5"
                     >
                         <img
                             alt=""
@@ -67,7 +67,7 @@
                             height="32"
                             decoding="async"
                             data-nimg="1"
-                            class="h-7 w-7"
+                            class="h-10 w-10"
                             style="color: transparent"
                             src="{{ $project['logo'] }}"
                         />
