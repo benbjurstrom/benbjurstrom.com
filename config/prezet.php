@@ -17,17 +17,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Data Classes
+    | Slug Configuration
     |--------------------------------------------------------------------------
     |
-    | These classes are used to store markdown information in a Validated DTO.
-    | You can override the default classes with your own and configure Pezet to
-    | use them here.
+    | Configure how document slugs are generated. The source can be 'filepath'
+    | or 'title'. Note that a slug defined in front matter will take precedence
+    | over the generated slug. When 'keyed' is true, the key present in the
+    | front matter key will be appended to the slug (e.g., my-post-123).
     |
     */
 
-    'data' => [
-        'frontmatter' => BenBjurstrom\Prezet\Data\FrontmatterData::class,
+    'slug' => [
+        'source' => 'filepath', // 'filepath' or 'title'
+        'keyed' => false, // 'true' or 'false'
     ],
 
     /*
@@ -55,7 +57,7 @@ return [
 
         'config' => [
             'heading_permalink' => [
-                'html_class' => 'mr-2 scroll-mt-12',
+                'html_class' => 'prezet-heading',
                 'id_prefix' => 'content',
                 'apply_id_to_heading' => false,
                 'heading_class' => '',
@@ -114,4 +116,32 @@ return [
         'origin' => 'https://benbjurstrom.com',
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Structured Data
+    |--------------------------------------------------------------------------
+    |
+    | Prezet uses these values for JSON-LD structured data. 'authors' defines
+    | named authors you can reference in front matter, and 'publisher' is used
+    | as the default publisher for all content.
+    |
+    */
+
+    // https://schema.org/author
+    'authors' => [
+        'benbjurstrom' => [
+            '@type' => 'Person',
+            'name' => 'Ben Bjurstrom',
+            'url' => 'https://benbjurstrom.com',
+            'image' => 'https://benbjurstrom.com/favicon.svg',
+        ],
+    ],
+
+    // https://schema.org/publisher
+    'publisher' => [
+        '@type' => 'Person',
+        'name' => 'Ben Bjurstrom',
+        'url' => 'https://benbjurstrom.com',
+        'image' => 'https://benbjurstrom.com/favicon.svg',
+    ],
 ];

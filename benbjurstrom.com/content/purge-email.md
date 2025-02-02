@@ -2,12 +2,7 @@
 title: Delete old email automatically using Google Apps Script
 date: '2020-04-30T08:00:00.000Z'
 excerpt: For the last six months I’ve had my Gmail account configured to automatically delete unarchived mail after 7 days that hasn't been starred or marked as important. And it’s been wonderful!
-author:
-  name: Ben Bjurstrom
-  picture: 'https://benbjurstrom.com.s3.us-west-2.amazonaws.com/img/headshot.jpg'
-ogImage:
-  url: '/assets/blog/dynamic-routing/cover.jpg'
-featured: 1
+author: benbjurstrom
 tags: ['optimization']
 ---
 

@@ -2,6 +2,7 @@
 title: 'Prezet: A Markdown Content Management Package for Laravel'
 date: 2024-08-09
 excerpt: "Markdown-driven content management offers a compelling alternative to traditional database-driven CMS platforms and I wanted to bring that same power and elegance to the Laravel ecosystem."
+author: benbjurstrom
 ---
 
 Recently I created a package for Laravel called [Prezet](https://prezet.com/) that aims to bring the power of Markdown-driven content management to the Laravel ecosystem. In this post I'll share why I built it, the problems it solves, and how it can make your content management life easier.

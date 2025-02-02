@@ -2,9 +2,7 @@
 title: 'Laravel Vapor and the AWS Lambda 50MB Limit'
 date: '2023-05-20T08:00:00.000Z'
 excerpt: 'Strategies for optimizing your Laravel Vapor application to fit within with the AWS Lambda 50MB Limit.'
-author:
-    name: Ben Bjurstrom
-    picture: 'https://benbjurstrom.com.s3-us-west-2.amazonaws.com/img/headshot.jpg'
+author: benbjurstrom
 ogImage:
     url: 'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/vapor-limit/laravel-vapor-50mb-limit.jpg'
 ---

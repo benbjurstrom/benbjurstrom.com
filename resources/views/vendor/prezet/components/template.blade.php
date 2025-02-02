@@ -60,6 +60,7 @@
             src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"
         ></script>
         @vite(['resources/css/app.css'])
+        @stack('jsonld')
     </head>
 
     <body class="flex h-full bg-zinc-50">

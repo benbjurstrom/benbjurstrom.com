@@ -3,6 +3,7 @@ title: 'YouTube Demonetized: Google mistakenly believes AdSense related to other
 date: '2021-07-19'
 excerpt: My WebConcepts YouTube channel was demonetized last week after Google mistakenly linked my AdSense with some other disabled account.
 image: 'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-07-19-youtube-demonitized.png'
+author: benbjurstrom
 ---
 
 ```html +parse

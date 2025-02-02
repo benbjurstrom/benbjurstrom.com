@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use BenBjurstrom\Prezet\Data\DocumentData;
 use BenBjurstrom\Prezet\Models\Document;
 use Illuminate\Http\Request;
 
@@ -15,12 +16,10 @@ class IndexController
             ->limit(3)
             ->get();
 
-        $fm = $docs->map(function ($doc) {
-            return $doc->frontmatter;
-        });
+        $docsData = $docs->map(fn (Document $doc) => app(DocumentData::class)::fromModel($doc));
 
         return view('index', [
-            'articles' => $fm,
+            'articles' => $docsData,
         ]);
     }
 }

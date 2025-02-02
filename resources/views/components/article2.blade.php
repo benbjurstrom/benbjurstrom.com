@@ -9,13 +9,13 @@
                     class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"
                 ></span>
                 <span class="relative z-10">
-                    {{ $article->title }}
+                    {{ $article->frontmatter->title }}
                 </span>
             </a>
         </h2>
         <time
             class="relative z-10 order-first mb-3 flex items-center pl-3.5 text-sm text-zinc-400 md:hidden"
-            datetime="2022-09-05"
+            datetime="{{ $article->createdAt }}"
         >
             <span
                 class="absolute inset-y-0 left-0 flex items-center"
@@ -26,7 +26,7 @@
             {{ $article->createdAt->format('F j, Y') }}
         </time>
         <p class="relative z-10 mt-2 text-sm text-zinc-600">
-            {{ $article->excerpt }}
+            {{ $article->frontmatter->excerpt }}
         </p>
         <div
             aria-hidden="true"
@@ -50,8 +50,8 @@
     </div>
     <time
         class="relative z-10 order-first mb-3 mt-1 flex hidden items-center text-sm text-zinc-400 md:block"
-        datetime="2022-09-05"
+        datetime="{{$article->createdAt}}"
     >
-        September 5, 2022
+        {{ $article->createdAt->format('F j, Y') }}
     </time>
 </article>

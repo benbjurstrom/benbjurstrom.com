@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2672dfb35c435d696bf8133b99519fb",
+    "content-hash": "c54dd6c1274e6ee2fb30221b52c9f79e",
     "packages": [
         {
             "name": "archtechx/laravel-seo",
@@ -140,16 +140,16 @@
         },
         {
             "name": "benbjurstrom/prezet",
-            "version": "dev-main",
+            "version": "v1.0.0-rc4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benbjurstrom/prezet.git",
-                "reference": "d3a5120aadffeedce00e669281d1a2b12b8e3ea9"
+                "reference": "2abb40a3224beedc579fcfda398eb0b06f201366"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benbjurstrom/prezet/zipball/d3a5120aadffeedce00e669281d1a2b12b8e3ea9",
-                "reference": "d3a5120aadffeedce00e669281d1a2b12b8e3ea9",
+                "url": "https://api.github.com/repos/benbjurstrom/prezet/zipball/2abb40a3224beedc579fcfda398eb0b06f201366",
+                "reference": "2abb40a3224beedc579fcfda398eb0b06f201366",
                 "shasum": ""
             },
             "require": {
@@ -158,36 +158,35 @@
                 "ext-dom": "*",
                 "ext-gd": "*",
                 "illuminate/contracts": "^10.0||^11.0",
-                "league/commonmark": "^2.4",
+                "league/commonmark": "^2.6.1",
                 "php": "^8.2",
                 "spatie/laravel-package-tools": "^1.16",
                 "symfony/yaml": "^6.2|^7.1",
-                "wendelladriel/laravel-validated-dto": "^3.5"
+                "wendelladriel/laravel-validated-dto": "^3.10.2"
             },
             "require-dev": {
                 "larastan/larastan": "2.9.8",
-                "laravel/pint": "^1.16",
-                "nunomaduro/collision": "^8.1.1||^7.10.0",
-                "orchestra/testbench": "^9.0.0||^8.22.0",
-                "pestphp/pest": "^2.34",
-                "pestphp/pest-plugin-arch": "^2.7",
-                "pestphp/pest-plugin-laravel": "^2.3",
+                "laravel/pint": "^1.20",
+                "nunomaduro/collision": "^8.6",
+                "orchestra/testbench": "^9.9",
+                "pestphp/pest": "^3.7",
+                "pestphp/pest-plugin-arch": "^3.0",
+                "pestphp/pest-plugin-laravel": "^3.1",
                 "phpstan/extension-installer": "^1.4.3",
                 "phpstan/phpstan": "1.12.2",
                 "phpstan/phpstan-deprecation-rules": "^1.1",
-                "phpstan/phpstan-phpunit": "^1.3",
+                "phpstan/phpstan-phpunit": "1.4.2",
                 "spatie/browsershot": "^4.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
-                    "providers": [
-                        "BenBjurstrom\\Prezet\\PrezetServiceProvider"
-                    ],
                     "aliases": {
                         "Prezet": "BenBjurstrom\\Prezet\\Facades\\Prezet"
-                    }
+                    },
+                    "providers": [
+                        "BenBjurstrom\\Prezet\\PrezetServiceProvider"
+                    ]
                 }
             },
             "autoload": {
@@ -195,44 +194,7 @@
                     "BenBjurstrom\\Prezet\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "BenBjurstrom\\Prezet\\Tests\\": "tests/",
-                    "Workbench\\App\\": "workbench/app/"
-                }
-            },
-            "scripts": {
-                "post-autoload-dump": [
-                    "@composer run prepare"
-                ],
-                "clear": [
-                    "@php vendor/bin/testbench package:purge-prezet --ansi"
-                ],
-                "prepare": [
-                    "@php vendor/bin/testbench package:discover --ansi"
-                ],
-                "build": [
-                    "@composer run prepare",
-                    "@php vendor/bin/testbench workbench:build --ansi"
-                ],
-                "start": [
-                    "Composer\\Config::disableProcessTimeout",
-                    "@composer run build",
-                    "@php vendor/bin/testbench serve"
-                ],
-                "analyse": [
-                    "vendor/bin/phpstan analyse -c ./phpstan.neon.dist --memory-limit=2G"
-                ],
-                "test": [
-                    "vendor/bin/pest"
-                ],
-                "test-coverage": [
-                    "vendor/bin/pest --coverage"
-                ],
-                "format": [
-                    "vendor/bin/pint"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -246,21 +208,20 @@
             "description": "Prezet: Markdown Blogging for Laravel",
             "homepage": "https://github.com/benbjurstrom/prezet",
             "keywords": [
-                "Prezet",
                 "laravel",
                 "prezet"
             ],
             "support": {
-                "source": "https://github.com/benbjurstrom/prezet/tree/main",
-                "issues": "https://github.com/benbjurstrom/prezet/issues"
+                "issues": "https://github.com/benbjurstrom/prezet/issues",
+                "source": "https://github.com/benbjurstrom/prezet/tree/v1.0.0-rc4"
             },
             "funding": [
                 {
-                    "type": "github",
-                    "url": "https://github.com/benbjurstrom"
+                    "url": "https://github.com/benbjurstrom",
+                    "type": "github"
                 }
             ],
-            "time": "2025-01-15T22:49:08+00:00"
+            "time": "2025-01-31T18:34:09+00:00"
         },
         {
             "name": "blade-ui-kit/blade-icons",
@@ -1464,16 +1425,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v11.38.2",
+            "version": "v11.41.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "9d290aa90fcad44048bedca5219d2b872e98772a"
+                "reference": "3ef433d5865f30a19b6b1be247586068399b59cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/9d290aa90fcad44048bedca5219d2b872e98772a",
-                "reference": "9d290aa90fcad44048bedca5219d2b872e98772a",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/3ef433d5865f30a19b6b1be247586068399b59cc",
+                "reference": "3ef433d5865f30a19b6b1be247586068399b59cc",
                 "shasum": ""
             },
             "require": {
@@ -1499,7 +1460,7 @@
                 "league/flysystem-local": "^3.25.1",
                 "league/uri": "^7.5.1",
                 "monolog/monolog": "^3.0",
-                "nesbot/carbon": "^2.72.2|^3.4",
+                "nesbot/carbon": "^2.72.6|^3.8.4",
                 "nunomaduro/termwind": "^2.0",
                 "php": "^8.2",
                 "psr/container": "^1.1.1|^2.0.1",
@@ -1574,6 +1535,7 @@
                 "fakerphp/faker": "^1.24",
                 "guzzlehttp/promises": "^2.0.3",
                 "guzzlehttp/psr7": "^2.4",
+                "laravel/pint": "^1.18",
                 "league/flysystem-aws-s3-v3": "^3.25.1",
                 "league/flysystem-ftp": "^3.25.1",
                 "league/flysystem-path-prefixing": "^3.25.1",
@@ -1674,7 +1636,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-01-15T00:06:46+00:00"
+            "time": "2025-01-30T13:25:22+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -3505,16 +3467,16 @@
         },
         {
             "name": "spatie/laravel-package-tools",
-            "version": "1.16.4",
+            "version": "1.18.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-package-tools.git",
-                "reference": "ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53"
+                "reference": "ba67eee37d86ed775dab7dad58a7cbaf9a6cfe78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53",
-                "reference": "ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/ba67eee37d86ed775dab7dad58a7cbaf9a6cfe78",
+                "reference": "ba67eee37d86ed775dab7dad58a7cbaf9a6cfe78",
                 "shasum": ""
             },
             "require": {
@@ -3523,10 +3485,10 @@
             },
             "require-dev": {
                 "mockery/mockery": "^1.5",
-                "orchestra/testbench": "^7.7|^8.0",
-                "pestphp/pest": "^1.22",
-                "phpunit/phpunit": "^9.5.24",
-                "spatie/pest-plugin-test-time": "^1.1"
+                "orchestra/testbench": "^7.7|^8.0|^9.0",
+                "pestphp/pest": "^1.22|^2",
+                "phpunit/phpunit": "^9.5.24|^10.5",
+                "spatie/pest-plugin-test-time": "^1.1|^2.2"
             },
             "type": "library",
             "autoload": {
@@ -3553,7 +3515,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-package-tools/issues",
-                "source": "https://github.com/spatie/laravel-package-tools/tree/1.16.4"
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.18.3"
             },
             "funding": [
                 {
@@ -3561,7 +3523,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-20T07:29:11+00:00"
+            "time": "2025-01-22T08:51:18+00:00"
         },
         {
             "name": "symfony/clock",
@@ -5793,20 +5755,21 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v7.1.1",
+            "version": "v7.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "fa34c77015aa6720469db7003567b9f772492bf2"
+                "reference": "ac238f173df0c9c1120f862d0f599e17535a87ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/fa34c77015aa6720469db7003567b9f772492bf2",
-                "reference": "fa34c77015aa6720469db7003567b9f772492bf2",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/ac238f173df0c9c1120f862d0f599e17535a87ec",
+                "reference": "ac238f173df0c9c1120f862d0f599e17535a87ec",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.2",
+                "symfony/deprecation-contracts": "^2.5|^3.0",
                 "symfony/polyfill-ctype": "^1.8"
             },
             "conflict": {
@@ -5844,7 +5807,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/v7.1.1"
+                "source": "https://github.com/symfony/yaml/tree/v7.2.3"
             },
             "funding": [
                 {
@@ -5860,7 +5823,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-05-31T14:57:53+00:00"
+            "time": "2025-01-07T12:55:42+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -6259,16 +6222,16 @@
         },
         {
             "name": "wendelladriel/laravel-validated-dto",
-            "version": "v3.8.0",
+            "version": "v3.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WendellAdriel/laravel-validated-dto.git",
-                "reference": "18e452136eca72fdb4107dae7b3875944fbaa494"
+                "reference": "9968cb67e56b0951047c73413d14fedef5531e6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WendellAdriel/laravel-validated-dto/zipball/18e452136eca72fdb4107dae7b3875944fbaa494",
-                "reference": "18e452136eca72fdb4107dae7b3875944fbaa494",
+                "url": "https://api.github.com/repos/WendellAdriel/laravel-validated-dto/zipball/9968cb67e56b0951047c73413d14fedef5531e6f",
+                "reference": "9968cb67e56b0951047c73413d14fedef5531e6f",
                 "shasum": ""
             },
             "require": {
@@ -6329,7 +6292,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-07-24T09:43:13+00:00"
+            "time": "2024-12-12T13:51:24+00:00"
         }
     ],
     "packages-dev": [
@@ -9471,7 +9434,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "archtechx/laravel-seo": 20,
-        "benbjurstrom/prezet": 20,
         "torchlight/torchlight-commonmark": 20
     },
     "prefer-stable": true,

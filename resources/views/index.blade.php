@@ -1,5 +1,5 @@
 @php
-    /* @var \BenBjurstrom\Prezet\Data\FrontmatterData $article */
+    /* @var \BenBjurstrom\Prezet\Data\DocumentData $article */
 @endphp
 
 <x-prezet::template>

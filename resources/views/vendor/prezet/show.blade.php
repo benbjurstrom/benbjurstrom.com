@@ -1,11 +1,15 @@
 <x-prezet::template>
     <x-prezet::alpine>
         @seo([
-            'title' => $frontmatter->title,
-            'description' => $frontmatter->excerpt,
-            'url' => 'https://benbjurstrom.com' . route('prezet.show', ['slug' => $frontmatter->slug], false),
-            'image' => 'https://benbjurstrom.com' . $frontmatter->image,
+            'title' => $document->frontmatter->title,
+            'description' => $document->frontmatter->excerpt,
+            'url' => 'https://benbjurstrom.com' . route('prezet.show', ['slug' => $document->slug], false),
+            'image' => 'https://benbjurstrom.com' . $document->frontmatter->image,
         ])
+
+        @push('jsonld')
+            <script type="application/ld+json">{!! $linkedData !!}</script>
+        @endpush
 
         <div
             class="relative mx-auto flex w-full max-w-6xl flex-auto justify-center sm:px-2 lg:px-8 xl:px-12"
@@ -18,12 +22,12 @@
                         <p
                             class="font-display text-sm font-medium text-primary-600"
                         >
-                            {{ $frontmatter->category }}
+                            {{ $document->category }}
                         </p>
                         <h1
                             class="font-display text-4xl font-medium tracking-tight text-stone-900"
                         >
-                            {{ $frontmatter->title }}
+                            {{ $document->frontmatter->title }}
                         </h1>
                     </header>
                     <div

@@ -8,7 +8,7 @@
                 class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"
             ></span>
             <span class="relative z-10">
-                {{ $article->title }}
+                {{ $article->frontmatter->title }}
             </span>
         </a>
     </h2>
@@ -25,7 +25,7 @@
         {{ $article->createdAt->format('F j, Y') }}
     </time>
     <p class="relative z-10 mt-2 text-sm text-zinc-600">
-        {{ $article->excerpt }}
+        {{ $article->frontmatter->excerpt }}
     </p>
     <div
         aria-hidden="true"

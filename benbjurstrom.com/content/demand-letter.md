@@ -2,9 +2,7 @@
 title: 'I sent Google a demand letter for breach of contract'
 date: '2021-08-02T08:00:00.000Z'
 excerpt: 'It’s been two weeks since my YouTube channel was wrongfully demonetized. Despite my best efforts I haven’t been able to reach anyone who can fix Google’s mistake.'
-author:
-    name: Ben Bjurstrom
-    picture: 'https://benbjurstrom.com.s3-us-west-2.amazonaws.com/img/headshot.jpg'
+author: benbjurstrom
 ogImage:
     url: 'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-08-02-demand-letter.png'
 ---

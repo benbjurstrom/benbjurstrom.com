@@ -2,7 +2,7 @@
 title: Simple Vector Similarity Search For Laravel
 date: "2024-11-17T08:00:00.000Z"
 excerpt: What if you wanted to search your data by a concept. Not a keyword. But rather something more abstract, like a category? How would you accomplish that?
-author: [Ben Bjurstrom, "https://benbjurstrom.com.s3-us-west-2.amazonaws.com/img/headshot.jpg"]
+author: benbjurstrom
 image: /prezet/img/ogimages/pgvector-for-laravel-scout.webp
 ---
 

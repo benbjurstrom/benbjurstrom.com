@@ -2,7 +2,7 @@
 title: Passwordless Authentication for Laravel
 date: "2024-11-17T08:00:00.000Z"
 excerpt: Should you use Socal Login, One-Time Passwords, Magic Links, or Passkeys for Passwordless Authentication?
-author: [Ben Bjurstrom, "https://benbjurstrom.com.s3-us-west-2.amazonaws.com/img/headshot.jpg"]
+author: benbjurstrom
 image: /prezet/img/ogimages/pgvector-for-laravel-scout.webp
 draft: true
 ---

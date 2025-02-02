@@ -2,11 +2,8 @@
 title: 'It Worked! Google remonetized my YouTube channel'
 date: '2021-09-02T08:00:00.000Z'
 excerpt: 'Google re-enabled my Adsense account exactly 30 days after I sent a demand letter for breach of contract.'
-author:
-    name: Ben Bjurstrom
-    picture: 'https://benbjurstrom.com.s3-us-west-2.amazonaws.com/img/headshot.jpg'
-ogImage:
-    url: 'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-09-02-youtube-remonitized.png'
+author: benbjurstrom
+image: 'https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-09-02-youtube-remonitized.png'
 ---
 
 ![Youtube Studio Screenshot](https://s3-us-west-2.amazonaws.com/benbjurstrom.com/img/adsense/2021-09-02-youtube-remonitized.png)
