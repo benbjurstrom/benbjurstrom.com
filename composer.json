@@ -15,12 +15,16 @@
         {
             "type": "vcs",
             "url": "https://github.com/benbjurstrom/laravel-seo"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/benbjurstrom/prezet"
         }
     ],
     "require": {
         "php": "^8.3",
         "archtechx/laravel-seo": "dev-with-app-url as v0.10.1",
-        "benbjurstrom/prezet": "1.0.0-rc4",
+        "benbjurstrom/prezet": "dev-main",
         "codeat3/blade-simple-icons": "^5.4",
         "laravel/framework": "^v11.38",
         "torchlight/torchlight-commonmark": "dev-main"

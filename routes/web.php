@@ -12,6 +12,7 @@ Route::withoutMiddleware([
         StartSession::class,
         ValidateCsrfToken::class,
     ])
+    ->middleware('cache.headers:s_maxage=86400')
     ->group(function () {
         Route::get('/', IndexController::class)
             ->name('prezet.index');

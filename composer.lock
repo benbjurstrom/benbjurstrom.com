@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c54dd6c1274e6ee2fb30221b52c9f79e",
+    "content-hash": "ba5a865f91187fdb7cd5f33d2e1c3578",
     "packages": [
         {
             "name": "archtechx/laravel-seo",
@@ -140,16 +140,16 @@
         },
         {
             "name": "benbjurstrom/prezet",
-            "version": "v1.0.0-rc4",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benbjurstrom/prezet.git",
-                "reference": "2abb40a3224beedc579fcfda398eb0b06f201366"
+                "reference": "c9e8b1f377324a8ca2abd8c5f60031be22d1a889"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benbjurstrom/prezet/zipball/2abb40a3224beedc579fcfda398eb0b06f201366",
-                "reference": "2abb40a3224beedc579fcfda398eb0b06f201366",
+                "url": "https://api.github.com/repos/benbjurstrom/prezet/zipball/c9e8b1f377324a8ca2abd8c5f60031be22d1a889",
+                "reference": "c9e8b1f377324a8ca2abd8c5f60031be22d1a889",
                 "shasum": ""
             },
             "require": {
@@ -178,15 +178,16 @@
                 "phpstan/phpstan-phpunit": "1.4.2",
                 "spatie/browsershot": "^4.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
-                    "aliases": {
-                        "Prezet": "BenBjurstrom\\Prezet\\Facades\\Prezet"
-                    },
                     "providers": [
                         "BenBjurstrom\\Prezet\\PrezetServiceProvider"
-                    ]
+                    ],
+                    "aliases": {
+                        "Prezet": "BenBjurstrom\\Prezet\\Facades\\Prezet"
+                    }
                 }
             },
             "autoload": {
@@ -194,7 +195,45 @@
                     "BenBjurstrom\\Prezet\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "BenBjurstrom\\Prezet\\Tests\\": "tests/",
+                    "Workbench\\App\\": "workbench/app/",
+                    "BenBjurstrom\\Prezet\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@composer run prepare"
+                ],
+                "clear": [
+                    "@php vendor/bin/testbench package:purge-prezet --ansi"
+                ],
+                "prepare": [
+                    "@php vendor/bin/testbench package:discover --ansi"
+                ],
+                "build": [
+                    "@composer run prepare",
+                    "@php vendor/bin/testbench workbench:build --ansi"
+                ],
+                "start": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "@composer run build",
+                    "@php vendor/bin/testbench serve"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse -c ./phpstan.neon.dist --memory-limit=2G"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -208,20 +247,21 @@
             "description": "Prezet: Markdown Blogging for Laravel",
             "homepage": "https://github.com/benbjurstrom/prezet",
             "keywords": [
+                "Prezet",
                 "laravel",
                 "prezet"
             ],
             "support": {
-                "issues": "https://github.com/benbjurstrom/prezet/issues",
-                "source": "https://github.com/benbjurstrom/prezet/tree/v1.0.0-rc4"
+                "source": "https://github.com/benbjurstrom/prezet/tree/main",
+                "issues": "https://github.com/benbjurstrom/prezet/issues"
             },
             "funding": [
                 {
-                    "url": "https://github.com/benbjurstrom",
-                    "type": "github"
+                    "type": "github",
+                    "url": "https://github.com/benbjurstrom"
                 }
             ],
-            "time": "2025-01-31T18:34:09+00:00"
+            "time": "2025-02-03T21:45:25+00:00"
         },
         {
             "name": "blade-ui-kit/blade-icons",
@@ -9434,6 +9474,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "archtechx/laravel-seo": 20,
+        "benbjurstrom/prezet": 20,
         "torchlight/torchlight-commonmark": 20
     },
     "prefer-stable": true,

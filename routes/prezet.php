@@ -15,6 +15,7 @@ Route::middleware('cache.headers:public;max_age=7200;etag')
         StartSession::class,
         ValidateCsrfToken::class,
     ])
+    ->middleware('cache.headers:s_maxage=86400')
     ->group(function () {
         Route::get('prezet/img/{path}', ImageController::class)
             ->name('prezet.image')
