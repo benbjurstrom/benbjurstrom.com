@@ -2,6 +2,7 @@
     @seo([
         'title' => 'About',
         'description' => 'I\'m Ben Bjurstrom a Laravel Developer and Tech Enthusiast.',
+        'url' => 'https://benbjurstrom.com' . route('about', absolute: false),
     ])
     <div class="mt-16 sm:mt-32 sm:px-8">
         <div class="mx-auto w-full max-w-7xl lg:px-8">

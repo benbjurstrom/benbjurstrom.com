@@ -17,19 +17,20 @@ Route::withoutMiddleware([
         Route::get('/', IndexController::class)
             ->name('prezet.index');
 
-        Route::get('/articles', ArticleController::class);
+        Route::get('/articles', ArticleController::class)
+            ->name('articles');
 
         Route::get('/about', function () {
             return view('about');
-        });
+        })->name('about');
 
         Route::get('/projects', function () {
             return view('projects');
-        });
+        })->name('projects');
 
         Route::get('/uses', function () {
             return view('uses');
-        });
+        })->name('uses');
     });
 
 require __DIR__.'/prezet.php';

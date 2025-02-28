@@ -2,6 +2,7 @@
     @seo([
         'title' => 'My Writing',
         'description' => 'All of my long-form thoughts on programming, technology, and more. Presented in chronological order.',
+        'url' => 'https://benbjurstrom.com' . route('articles', absolute: false),
     ])
     <div class="mt-16 sm:mt-32 sm:px-8">
         <div class="mx-auto w-full max-w-7xl lg:px-8">
