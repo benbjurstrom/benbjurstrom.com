@@ -10,11 +10,9 @@ class CachePageMiddleware
     {
         $response = $next($request);
 
-        if ($this->shouldCacheResponse($request, $response)) {
-            $response->headers->add([
-                'Cache-Control' => 'max-age=1800, public',
-            ]);
-        }
+        $response->headers->add([
+            'Cache-Control' => 'max-age=1800, public',
+        ]);
 
         return $response;
     }
