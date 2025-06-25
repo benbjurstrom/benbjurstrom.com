@@ -10,7 +10,7 @@ I recently needed to add vector similarity search capabilities to a PHP applicat
 
 ## The Challenge with SQLite Extensions in PHP
 
-When you use SQLite from PHP, you're not actually using a system-installed SQLite binary. Instead, the SQLite library is compiled directly into the PHP binary itself. This means that if you want to use a SQLite extension like sqlite-vec, you can't simply install it system-wide and expect it to work.
+When you use SQLite from PHP, you may not be using a system-installed SQLite binary. Instead, often the SQLite library is compiled directly into the PHP binary itself. This means that if you want to use a SQLite extension like sqlite-vec, you can't simply install it system-wide and expect it to work.
 
 Instead you have two options:
 
