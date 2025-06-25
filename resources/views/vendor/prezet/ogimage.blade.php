@@ -26,9 +26,9 @@
         class="font-sans text-gray-900 antialiased"
         style="height: 630px; width: 1200px"
     >
-        <div class="rounded-4xl from-gradient1/15 via-gradient2/50 to-gradient3/75 absolute inset-2 bg-[linear-gradient(180deg,var(--tw-gradient-stops))] from-[50%] via-[75%] ring-1 ring-inset ring-black/5 sm:bg-[linear-gradient(180deg,var(--tw-gradient-stops))]">
+        <div class="">
             <div class="p-24">
-                <h1 class="font-cal xs:min-h-1 min-h-48 text-balance text-6xl/[0.9] font-medium tracking-tight text-gray-950 md:text-8xl/[0.9]">
+                <h1 class="font-cal xs:min-h-1 min-h-48 text-balance text-6xl/[0.9] font-medium text-gray-950 md:text-8xl">
                     {{ $fm->title }}
                 </h1>
 
