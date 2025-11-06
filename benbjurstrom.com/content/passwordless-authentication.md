@@ -7,15 +7,20 @@ image: /prezet/img/ogimages/pgvector-for-laravel-scout.webp
 draft: true
 ---
 
+```html +parse
+<x-alert title="TL;DR">
+    Clerk.dev's data from 2.5 million sign-ins reveals that 65% of users prefer social login when given the choice.
+</x-alert>
+```
+
 So you don't want the responsibility of managing user's passwords and want to move to a passwordless login system. I don't blame you.
-
-
 
 But which one do you pick? One-time passwords (OTPs), magic links, or social authentication?
 
 Thankfully, auth-as-a-service provider clerk.dev recently [published data](https://x.com/tweetsbycolin/status/1857900968245072087) from 2.5 million sign-ins that reveals some interesting patterns. When given an option between Sign In with Google, password based auth, an emailed OTP, or an emailed Magic Link, a whopping 65% of users chose Sign in with Google. In a distant second traditional passwords came in at 27%, meanwhile the email based solutions came in at 5.3% for OTPs and an abysmal 1.6% for magic links.
 
 Additionally, the data shows that the time it takes to sign in with Google averages just 3.86 seconds, far outpacing the times for other strategies such as passwords (7.22 seconds), OTPs (42.84 seconds), and magic links (56.85 seconds). I first want to explore why these patterns emerge and what they mean for your authentication strategy. Then I want to take a look at the passwordless options available for the Laravel Framework.
+
 ## The Case for Passwordless Authentication
 
 Before we dive in, let's address why you might want to offer passwordless options in the first place. While power users with password managers might prefer traditional password-based authentication, the reality is that many users:
@@ -26,6 +31,7 @@ Before we dive in, let's address why you might want to offer passwordless option
 - Need email verification regardless of login method.
 
 This last point is particularly important: if your application requires email verification anyway (as most non-trivial apps do), incorporating email-based authentication from the start can streamline the user experience.
+
 ## Looking Deeper Into The Data
 When you look at the clerk.dev data, we see a strong correlation between the time it takes for a successful sign-in and the percentage of users who choose that option. It seems clear that the two email-based authentication methods, OTPs and Magic Links, are the least popular because they take on average almost a minute to complete the successful sign-on.
 
@@ -45,7 +51,7 @@ Passkeys offer another excellent option as a secure, quick way to authenticate a
 
 ### So Which Passwordless Option Should You Choose?
 
-I would argue that instead of choosing a single passwordless option, you should choose several. Almost certainly, based on the clerk.dev data, if you don't offer traditional passwords, you should almost certainly offer some form of social login. Setting up login with Google is trivially easy especially in a Laravel app using the socialite package.
+I would argue that instead of choosing a single passwordless option, you should choose several. Based on the clerk.dev data, if you don't offer traditional passwords, you should almost certainly offer some form of social login. Setting up login with Google is trivially easy especially in a Laravel app using the [socialite](https://laravel.com/docs/12.x/socialite) package.
 
 There's a lot of replies under the aforementioned clerk.dev tweet that say things like, "if the only way to authenticate with your app is via email, I'm not going to sign into your app." They argue that the cost of context switching your browser window to your email client, or just generally getting distracted while waiting for the email to come in is too high.
 
@@ -67,17 +73,7 @@ This combination provides:
 - Fallback options for users without social accounts
 - Enhanced security options for power users
 
-Consider the user journey: A new user signs up with social login, getting immediate access with a verified email. If they later can't access their social account, they can use the passwordless fallback. Finally, they can set up a passkey for future quick access.
-
-## Implementation Considerations
-
-When implementing either OTPs or magic links, several factors deserve attention:
-
-- Rate limiting to prevent abuse
-- Expiration times for security
-- Email template design for clear communication
-- Audit logging for security monitoring
-- Event tracking for metrics and monitoring
+Consider the user journey: A new user signs up with social login, getting immediate access with a verified email. If they later can't access their social account, they can use the OTP fallback. Finally, they can set up a passkey for future quick access.
 
 ### Laravel Implementation Options
 

@@ -48,9 +48,35 @@
               "icon": "lucide-file",
               "title": "passwordless-authentication"
             }
+          },
+          {
+            "id": "54eadd12bc73ee32",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/php-markdown-chunker.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "php-markdown-chunker"
+            }
+          },
+          {
+            "id": "76f36eb5c2799f72",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "images/pgvector/pgvector-for-laravel-scout-20241117075705970.webp"
+              },
+              "icon": "lucide-image",
+              "title": "pgvector-for-laravel-scout-20241117075705970"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -69,7 +95,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -106,7 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 264.5
   },
   "right": {
     "id": "4a9a8ee1de15cf3a",
@@ -183,6 +210,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -192,27 +220,33 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "80b12b263ccb25be",
+  "active": "837ac778f80eca0f",
   "lastOpenFiles": [
+    "images/ogimages/php-markdown-chunker.webp",
+    "images/php-markdown-chunker-1762388105292.webp",
+    "markdown-object-demo.test_(1280x720) (3).png",
+    "content/php-markdown-chunker.md",
+    "content/pgvector-for-laravel-scout.md",
+    "images/pgvector/pgvector-for-laravel-scout-20241117075705970.webp",
+    "images/pgvector",
+    "content/laravel-vapor-50mb-limit.md",
+    "images/ogimages/pgvector-for-laravel-scout.webp",
+    "SUMMARY.md",
+    "images/ogimages/sqlite-vec-php.webp",
+    "content/demand-letter.md",
+    "content/passwordless-authentication.md",
+    "content/sqlite-vec-php.md",
+    "content/sql-vec-php.md",
+    "content/vercek.md",
     "images/home6.webp",
     "images/home5.webp",
     "images/home1.webp",
     "images/home2.webp",
     "images/home3.webp",
-    "images/home4.webp",
     "content/Untitled",
     "content/youtube-demonetized.md",
-    "content/passwordless-authentication.md",
-    "content/pgvector-for-laravel-scout.md",
     "content/purge-email.md",
     "content/youtube-remonetized.md",
-    "images/Social Login, One-Time Passwords, or Magic Links for Passwordless Authentication?-20241212135305463.webp",
-    "images/ogimages/pgvector-for-laravel-scout.webp",
-    "images/ogimages",
-    "images/pgvector-for-laravel-scout-20241117122737083.webp",
-    "images/youtube-demonetized-20240822132214761.webp",
-    "images/youtube-demonetized-20240822132133641.webp",
-    "content/laravel-vapor-50mb-limit.md",
-    "content/demand-letter.md"
+    "images/ogimages"
   ]
 }
