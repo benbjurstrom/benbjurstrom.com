@@ -91,12 +91,11 @@ $mdObj = MarkdownObject::fromJson($json);
 
 ## Getting Started
 
-If you're building RAG applications in PHP, you can install the package via Composer:
-
+If you're building a RAG application in PHP, you can install the package via Composer:
 ```bash
 composer require benbjurstrom/markdown-object
 ```
 
-I recommend starting with the [demo application](https://github.com/benbjurstrom/markdown-object-demo) to experiment with your content and find the right chunking parameters. Once you understand how different settings affect your chunks, integration into your vectorization pipeline is straightforward.
-
 The package is open source and available on [GitHub](https://github.com/benbjurstrom/markdown-object). If you run into issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+For the complete Laravel RAG stack, pair this with my [pgvector driver for Laravel Scout](https://benbjurstrom.com/pgvector-for-laravel-scout). Together they provide a fully native PHP solution: Markdown Object handles the intelligent chunking, while the pgvector driver manages vector storage and similarity search with Scout's model observers keeping everything in sync automatically.
