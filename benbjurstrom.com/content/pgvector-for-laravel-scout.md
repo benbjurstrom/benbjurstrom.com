@@ -24,6 +24,8 @@ The solution lies in vector embeddings. In simple terms, vector embeddings are n
 
 In our breakfast example, reviews mentioning different types of breakfast foods would end up in roughly the same region of this space. We could then query the distance between the vector for a generic search term like "Breakfast" and our reviews. The reviews with the shortest distance from our search term likely relate to breakfast food (assuming they exist in the dataset).
 
+Of course, individual reviews are small pieces of text. But what if you're working with larger documents like blog posts, documentation, or PDFs? You can't just throw an entire document into a single embedding and expect good search results. You need to break it into semantic chunks first. If that's your use case, check out my [PHP Markdown Chunker](/php-markdown-chunker) article which covers intelligent document chunking that preserves structure and meaning.
+
 Historically, to store embeddings and calculate distances between vectors, you needed a dedicated vector database. However, with the release of the [Pgvector](https://github.com/pgvector/pgvector) extension for PostgreSQL, it's possible to store embeddings and perform similarity searches in the same relational database you're already using to store your data. 
 
 ## Pgvector and Laravel Scout: A Perfect Match
