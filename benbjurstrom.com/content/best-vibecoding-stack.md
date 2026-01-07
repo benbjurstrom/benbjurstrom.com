@@ -47,9 +47,9 @@ public function show(int $id): User
 }
 ```
 
-Your AI makes mistakes. PHPStan catches them immediately—type mismatches, null safety issues, incorrect method signatures—instead of three hours later when you're debugging production.
+Your AI makes mistakes. PHPStan catches them immediately and automatically. Type mismatches, null safety issues, and incorrect method signatures can't hide from static analysis.
 
-I add a rule to my coding agent that tells it to run PHPStan after every change. The feedback loop is instant: write code, run analysis, fix errors, repeat. No waiting until runtime to discover the AI hallucinated a method signature.
+I add a rule to my CLAUDE.md file telling the agent to run PHPStan after every change. No waiting until runtime to discover the AI hallucinated a method signature.
 
 ## Opinionated Defaults
 
