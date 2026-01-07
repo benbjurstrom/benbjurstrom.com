@@ -20,21 +20,21 @@ I know that's a strong claim. I built my first SaaS in Next.js many years ago. I
 
 Your AI is only as good as the decisions it doesn't have to make. Every time an LLM has to choose between competing patterns, pick a library, or figure out how to wire things together, that's where things can go wrong. The numerous external services you need to sign up for. The weird architectural choices. The code that looks right but falls apart the moment you try to extend it.
 
-Laravel has an opinion about everything. And when you're vibecoding, that's not a limitation. It's a superpower.
+Laravel has built in defaults for almost everything. And when you're vibecoding, that's not a limitation. It's a superpower.
 
 ## Laravel Boost
 
-I'll address the elephant in the room first. LLMs are better at JavaScript. They've seen more of it in training. More React, more TypeScript, more Node. That's just a fact.
+I'll address the elephant in the room first. LLMs are generally better at JavaScript. They've seen more of it in training. More React, more TypeScript, more Node. That's just a fact.
 
 But Laravel has something that changes the equation: a first-party package called [Laravel Boost](https://github.com/laravel/boost).
 
 Boost generates dynamic `AGENT.md` files based on which first-party packages you actually have installed. Using Sanctum for auth? It knows. Using Horizon for queues? It knows. Project-specific context, not generic documentation.
 
-It also provides an MCP server that gives your AI direct access to semantic documentation search, your database schema, browser errors, and more. With Boost, that JavaScript training data gap stops mattering.
+It also provides an MCP server that gives your AI direct access to semantic documentation search, your database schema, browser errors, and more. With Boost, the JavaScript training gap is completely closed.
 
 ## Strong Types with PHPStan
 
-Something people who haven't touched PHP in a decade don't realize: PHP has types now. Real types.
+Something people who haven't touched PHP in a decade might not realize: PHP has types now. Real types.
 
 With [PHPStan](https://phpstan.org/) and its Laravel-specific extension [Larastan](https://github.com/larastan/larastan), you get TypeScript-level static analysis.
 
@@ -49,35 +49,37 @@ public function show(int $id): User
 
 Your AI makes mistakes. PHPStan catches them immediately and automatically. Type mismatches, null safety issues, and incorrect method signatures can't hide from static analysis.
 
-I add a rule to my CLAUDE.md file telling the agent to run PHPStan after every change. No waiting until runtime to discover the AI hallucinated a method signature.
+I add a rule to my `CLAUDE.md` file telling the agent to run PHPStan after every change. No waiting until runtime to discover the AI hallucinated a method signature.
 
 ## Opinionated Defaults
 
 Database access? Use eloquent. Caching? Built in. Migrations? Standardized. Testing? Ready out of the box. Queues, emails, notifications, scheduled tasks? All first-party.
 
-And then there's authentication. You know how much boilerplate and decision-making goes into setting up auth in a Node project? In Laravel it's all part of the framework.
+And then there's authentication. You know how much boilerplate and decision-making goes into setting up auth in a Node project? In Laravel it's all built into the framework.
 
 When you ask an AI to "add a feature that sends an email when a user signs up," it doesn't have to decide which email library to use, how to configure it, or where to put the code. There's one way to do it. The Laravel way. Documented extensively. With conventions the AI already knows.
 
 ## Inertia.js and React
 
-You can still use React. With [Inertia.js](https://inertiajs.com/), you get React on the frontend exactly where LLMs excel. The entire React ecosystem. [Shadcn](https://ui.shadcn.com/). All of it.
+You still get the entire React ecosystem. [Shadcn](https://ui.shadcn.com/). TypeScript. All of it. [Inertia.js](https://inertiajs.com/) gives you React on the frontend exactly where it excels, with Laravel handling everything on the backend.
 
-My preferred stack: React and TypeScript on the frontend, Laravel on the backend, Inertia gluing them together.
+**This is my preferred stack: React and TypeScript on the frontend, Laravel on the backend, Inertia gluing them together.**
 
-![](best-vibecoding-stack-1767746069402.webp)
+![React, Inertia, Laravel](best-vibecoding-stack-1767746069402.webp)
 
-[Wayfinder](https://github.com/laravel/wayfinder) makes it even better. It generates TypeScript types from your Laravel routes. When your AI writes a frontend component that calls an API endpoint, TypeScript knows exactly what that endpoint expects and what it returns.
+Add in [Wayfinder](https://github.com/laravel/wayfinder) and it makes things even better. Wayfinder generates TypeScript types from your Laravel routes. When your AI writes a frontend component that calls an API endpoint, TypeScript knows exactly what that endpoint expects and what it returns.
 
 ```typescript
 // Generated by Wayfinder - full type safety
-import { router } from '@inertiajs/react'
-import { route } from 'wayfinder'
+import { useForm } from '@inertiajs/react'
+import { store } from '@/actions/App/Http/Controllers/UserController'
 
-router.post(route('users.store'), {
+const form = useForm({
     name: 'Ben',
     email: 'ben@example.com'
 })
+
+form.submit(store()) // POST to /users with full type checking
 ```
 
 You're not giving up React. You're pairing it with a backend that handles all the hard stuff for you. With full type safety from database to browser.
@@ -86,15 +88,13 @@ You're not giving up React. You're pairing it with a backend that handles all th
 
 It used to be that deploying a Next.js app on Vercel was dramatically easier than deploying Laravel. That's not true anymore.
 
-[Laravel Cloud](https://cloud.laravel.com/) gives you hosting, database, cache, queues, and websockets in a simple deployment. You can deploy a brand new site in under a minute.
+[Laravel Cloud](https://cloud.laravel.com/) gives you hosting, database, cache, queues, and websockets in a simple deployment. You can deploy a brand-new site in under a minute. You push code, it runs.
 
 For local development, [Laravel Herd](https://herd.laravel.com/) sets up your environment with a single install. No Docker configuration, no Vagrant, no wrestling with PHP versions. It just works.
 
-You push code, it runs.
-
 ## First-Party Paradise 🌴
 
-Josh Pigford [nailed this recently](https://x.com/Shpigford/status/2003477717245919286): the Next.js world is "VERY heavy on 3rd-party-services."
+As serial product builder Josh Pigford [pointed out](https://x.com/Shpigford/status/2003477717245919286), the Next.js world is "VERY heavy on 3rd-party-services."
 
 Look at what a typical Next.js project requires: Clerk or Auth0 for authentication. Supabase or PlanetScale for your database. Upstash for Redis and queues. Resend or Postmark for email. Pusher or Ably for websockets. Inngest or Trigger.dev for background jobs. Uploadthing for file uploads. Algolia for search.
 
@@ -102,6 +102,6 @@ That's eight different accounts. Eight different dashboards. Eight different bil
 
 With Laravel Cloud, everything lives in one place. Your database, Redis, queue workers, websocket server, scheduled tasks, and file storage all live in the same dashboard on one bill. Auth, email, notifications, and search are first-party Laravel packages.
 
-When you ask your AI to "add real-time notifications," it doesn't have to figure out which websocket service to use. It just uses Reverb.
+When you ask your AI to "add real-time notifications," it doesn't have to figure out which websocket service to use. It just uses [Reverb](https://reverb.laravel.com/).
 
 Nothing beats Laravel.
