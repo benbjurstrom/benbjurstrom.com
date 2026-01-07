@@ -12,9 +12,9 @@ image: /prezet/img/ogimages/best-vibecoding-stack.webp
 </x-alert>
 ```
 
-I've spent the last year vibecoding everything. An [Obsidian plugin](https://github.com/benbjurstrom/ezrag) in pure TypeScript. A macOS application. Multiple packages. A full SaaS. And after all of that, I can tell you: nothing lets you move faster than Laravel.
+I've spent the last year vibecoding everything. An [Obsidian plugin](https://github.com/benbjurstrom/ezrag) in pure TypeScript. A [macOS application](https://cutword.com/). Multiple internal tools. A full SaaS. And after all of that, I can tell you with confidence: nothing lets you move faster than Laravel.
 
-I know that's a strong claim. I built my first SaaS in Next.js. I've used [Astro](https://astro.build/) for my blogs. I've written services in Go, dabbled in Python when I need their AI tooling, and I've shipped iOS and macOS apps. If I'm being completely honest, PHP isn't my favorite programming language.
+I know that's a strong claim. I built my first SaaS in Next.js many years ago. I've used [Astro](https://astro.build/) for my blogs. I've written services in Go, dabbled in Python when I need their AI tooling, and I've shipped native iOS and macOS apps.
 
 **But for creating web applications? Laravel's the best and it's not even close.**
 
@@ -80,9 +80,7 @@ router.post(route('users.store'), {
 })
 ```
 
-You're not giving up React. You're pairing it with a backend that handles all the hard stuff for you.
-
-Full type safety from database to browser.
+You're not giving up React. You're pairing it with a backend that handles all the hard stuff for you. With full type safety from database to browser.
 
 ## Deployment with Laravel Cloud
 
